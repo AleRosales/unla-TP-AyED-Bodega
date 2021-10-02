@@ -1,7 +1,15 @@
 #ifndef VINO_H_INCLUDED
 #define VINO_H_INCLUDED
 
-struct VinoEstructura;
+struct VinoEstructura{
+        int idVino;
+        char etiqueta[50];
+        char bodega[50];
+        char segmento_del_vino[50];
+        char varietal[50];
+        int anioCosecha;
+        char terroir[50];
+        };
 typedef struct VinoEstructura * Vino;
 
 Vino crearVino();

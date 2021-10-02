@@ -17,7 +17,6 @@ void leerYpasarAstructConString(Lista clien){
     ifstream archivo;
     string texto;
     archivo.open("usuarios_test.txt",ios::in);//abrimos el archivo en modo lectura
-    int contador=0;
 
     if(archivo.fail()){
         cout<<"No se pudo abrir el archivo";
@@ -30,20 +29,17 @@ void leerYpasarAstructConString(Lista clien){
         Cliente c;
         c= pasarCharAStructConString(texto);
 
-        agregar(clien,c);
-        cout<<"TAmanio clientes"<<getTamanio(clien)<<endl;
-
-
+        agregarNodo(clien,c);
     }
-
     archivo.close();
+    cout<<"Tamanio clientes:"<<clien->tamanio<<endl;
+
 }
 
 void leerYpasarAseleccion(Lista selec){
      fstream archivo;
      string texto;
     archivo.open("elecion.txt",ios::in);//abrimos el archivo en modo lectura
-    int contador=0;
 
     if(archivo.fail()){
         cout<<"No se pudo abrir el archivo";
@@ -54,15 +50,10 @@ void leerYpasarAseleccion(Lista selec){
         getline(archivo,texto);
         infoMesual c;
        c= pasarCharAstructSeleccion(texto);
-       agregar(selec,c);
-       cout<<"TAmanio seleccion"<<getTamanio(selec)<<endl;
-
-
-
-
+       agregarNodo(selec,c);
     }
-
     archivo.close();
+    cout<<"Tamanio seleccion:"<<selec->tamanio<<endl;
 
 }
 
@@ -70,7 +61,6 @@ void leerYpasaraVinos(Lista vin){
  fstream archivo;
      string texto;
     archivo.open("catalogos.txt",ios::in);//abrimos el archivo en modo lectura
-    int contador=0;
 
     if(archivo.fail()){
         cout<<"No se pudo abrir el archivo";
@@ -81,13 +71,12 @@ void leerYpasaraVinos(Lista vin){
         getline(archivo,texto);
         Vino v;
         v= pasarCharAStructConStringVino(texto);
-        agregar(vin,v);
-       cout<<"TAmanio vinos"<<getTamanio(vin)<<endl;
+        agregarNodo(vin,v);
 
 
     }
-
     archivo.close();
+    cout<<"Tamanio vinos:"<<vin->tamanio<<endl;
 
 }
 

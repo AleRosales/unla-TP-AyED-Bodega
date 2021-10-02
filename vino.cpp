@@ -1,21 +1,10 @@
 #include <iostream>
 #include <stdlib.h>
 #include <string.h>
-#include "vino.hpp"
+#include "vino.h"
 
 using namespace std;
 
-
-
-struct VinoEstructura{
-        int idVino;
-        char etiqueta[50];
-        char bodega[50];
-        char segmento_del_vino[50];
-        char varietal[50];
-        int anioCosecha;
-        char terroir[50];
-        };
 
 Vino crearVino(){
 

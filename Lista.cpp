@@ -4,63 +4,63 @@ using namespace std;
 
 Lista crearLista(){
     Lista lista=new listaStruct();
-    setTamanio(lista,0);
+    lista->tamanio=0;
     return lista;
 }
 
 
-void agregar(Lista lista,void* dato){
+void agregarNodo(Lista lista,void* dato){
     Nodo newNodo=new nodo();
-    setDato(newNodo,dato);
-    if(getTamanio(lista)>0){
+    newNodo->dato=dato;
+    if(lista->tamanio>0){
         int i=1;
-        Nodo aux=getInicio(lista);
-        while(getSiguiente(aux)!=NULL){
+        Nodo aux=lista->inicio;
+        while(aux->siguiente!=NULL){
             i++;
             aux=aux->siguiente;
         }
-        setNro(newNodo,(i+1));
-        setSiguiente(newNodo,NULL);
-        setSiguiente(aux,newNodo);
+        newNodo->nro=(i+1);
+        newNodo->siguiente=NULL;
+        aux->siguiente=newNodo;
     }else{
-        setNro(newNodo,1);
-        setSiguiente(newNodo,NULL);
-        setInicio(lista,newNodo);
+        newNodo->nro=1;
+        newNodo->siguiente=NULL;
+        lista->inicio=newNodo;
     }
-    setTamanio(lista,(getTamanio(lista)+1));
+    lista->tamanio=(lista->tamanio+1);
 }
 
 
-void eliminar(Lista lista,int nro){
-    if(getTamanio(lista)>0){
+void eliminarNodo(Lista lista,int nro){
+    if(lista->tamanio>0){
         Nodo ant=NULL;
-        Nodo aux=getInicio(lista);
+        Nodo aux=lista->inicio;
         int encontrado=0;
         while(aux!=NULL && encontrado==0){
-            if(getNro(aux)==(nro-1)){
+            if(aux->nro==(nro-1)){
                 ant=aux;
             }
-            if(getNro(aux)==nro){
+            if(aux->nro==nro){
                 encontrado=1;
             }else{
-                aux=getSiguiente(aux);
+                aux=aux->siguiente;
             }
         }
         if(encontrado==1){
             if(ant!=NULL){
-                setSiguiente(ant,getSiguiente(aux));
+                ant->siguiente=aux->siguiente;
             }else{
                 //elimina el 1ro de la lista
-                setInicio(lista,getSiguiente(aux));
+                lista->inicio=aux->siguiente;
             }
-            Nodo sig=getSiguiente(aux);
+            Nodo sig=aux->siguiente;
             while(sig!=NULL){
-                setNro(sig,getNro(sig)-1);
-                sig=getSiguiente(sig);
+                sig->nro=(sig->nro-1);
+                sig=sig->siguiente;
             }
-            delete getDato(aux);
+            delete aux->dato;
             delete aux;
-            setTamanio(lista,(getTamanio(lista)-1));
+            lista->tamanio=(lista->tamanio-1);
         }else{
             cout << "No se encontro el elemento "<<nro<<" en la lista"<< endl;
         }
@@ -71,50 +71,65 @@ void eliminar(Lista lista,int nro){
 
 
 void eliminarLista(Lista lista){
-    Nodo aux=getInicio(lista);
+    Nodo aux=lista->inicio;
     while(aux!=NULL){
-        delete getDato(aux);
+        delete aux->dato;
         delete aux;
-        aux=getSiguiente(aux);
+        aux=aux->siguiente;
     }
     delete lista;
 }
 
-
-void setNro(Nodo nodo,int nro){
-    nodo->nro=nro;
-}
-void setDato(Nodo nodo,void* dato){
-    nodo->dato=dato;
-}
-void setSiguiente(Nodo nodo,Nodo sig){
-    nodo->siguiente=sig;
-}
-int getNro(Nodo nodo){
-    return nodo->nro;
-}
-void* getDato(Nodo nodo){
-    return nodo->dato;
-}
-Nodo getSiguiente(Nodo nodo){
-    return nodo->siguiente;
+Nodo nodoSeleccionado(Lista lista,int nro){
+    Nodo aux=lista->inicio;
+    if(aux->nro==nro){
+        return aux;
+    }
+    while(aux!=NULL){
+        if(aux->nro==nro){
+            return aux;
+        }else{
+            aux=aux->siguiente;
+        }
+    }
+    cout << "No se encontro el elemento "<<nro<<" en la lista"<< endl;
+    return NULL;
 }
 
-int getTamanio(Lista lista){
-    return lista->tamanio;
+bool listaVacia(Lista lista){
+    if(lista==NULL || lista->tamanio==0 || lista->inicio==NULL){
+        return true;
+    }else{
+        return false;
+    }
 }
 
-
-Nodo getInicio(Lista lista){
-    return lista->inicio;
+Nodo ultimoNodo(Lista lista){
+    Nodo aux=lista->inicio;
+    while(aux->siguiente!=NULL){
+        aux=aux->siguiente;
+    }
+    return aux;
 }
 
-
-void setTamanio(Lista lista,int tamanio){
-    lista->tamanio=tamanio;
+Nodo anteriorNodo(Lista lista,Nodo nodo){
+    Nodo anterior=lista->inicio;
+    while(anterior->siguiente!=nodo && anterior->siguiente!=NULL){
+        anterior=anterior->siguiente;
+    }
+    if(anterior->siguiente==nodo){
+        return anterior;
+    }else{
+        cout << "No se encontro el nodo anterior al nodo "<<nodo->nro<<" en la lista"<< endl;
+        return NULL;
+    }
 }
 
-
-void setInicio(Lista lista,Nodo nodo){
-    lista->inicio=nodo;
+void mostrarLista(Lista lista){
+    Nodo nodo=lista->inicio;
+    cout << "Nodo nro:"<<nodo->nro<<"  Dato:"<<(nodo->dato)<< endl;
+    while(nodo!=NULL){
+        cout << "Nodo nro:"<<nodo->nro<<"  Dato:"<<(nodo->dato)<< endl;
+        nodo=nodo->siguiente;
+    }
 }

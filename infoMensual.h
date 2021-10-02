@@ -1,7 +1,17 @@
 #ifndef INFOMENSUAL_H_INCLUDED
 #define INFOMENSUAL_H_INCLUDED
 
-struct infoMesualEstructura;
+struct infoMesualEstructura{
+        int idUsuario;
+        int mesSeleccion;
+        int anioSeleccion;
+        int idVino1;
+        int idVino2;
+        int idVino3;
+        int idVino4;
+        int idVino5;
+        int idVino6;
+        };
 typedef struct infoMesualEstructura * infoMesual;
 
 infoMesual crearInfoMensual();

@@ -1,0 +1,81 @@
+# depslib dependency file v1.0
+1633210480 source:f:\tarea 2021\algoritmos y estructuras de datos\tp final\unla-tp-ayed-bodega-main\infomensual.cpp
+	<iostream>
+	<stdlib.h>
+	<string.h>
+	"infoMensual.h"
+
+1632250434 f:\tarea 2021\algoritmos y estructuras de datos\tp final\unla-tp-ayed-bodega-main\infomensual.hpp
+
+1633211922 source:f:\tarea 2021\algoritmos y estructuras de datos\tp final\unla-tp-ayed-bodega-main\main.cpp
+	<iostream>
+	"lista.h"
+	"funcionesCargarArchivos.h"
+	"infoMensual.h"
+	"vino.h"
+	"cliente.h"
+	"RankingVinos.h"
+
+1633208480 f:\tarea 2021\algoritmos y estructuras de datos\tp final\unla-tp-ayed-bodega-main\lista.h
+
+1632594824 f:\tarea 2021\algoritmos y estructuras de datos\tp final\unla-tp-ayed-bodega-main\funcionescargararchivos.h
+	"infoMensual.h"
+	"vino.h"
+	"cliente.h"
+	"lista.h"
+	<string.h>
+
+1633210480 f:\tarea 2021\algoritmos y estructuras de datos\tp final\unla-tp-ayed-bodega-main\infomensual.h
+
+1633210516 f:\tarea 2021\algoritmos y estructuras de datos\tp final\unla-tp-ayed-bodega-main\vino.h
+
+1632594824 f:\tarea 2021\algoritmos y estructuras de datos\tp final\unla-tp-ayed-bodega-main\cliente.h
+
+1633206146 source:f:\tarea 2021\algoritmos y estructuras de datos\tp final\unla-tp-ayed-bodega-main\cliente.cpp
+	<iostream>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"cliente.h"
+	<cstring>
+
+1633210506 source:f:\tarea 2021\algoritmos y estructuras de datos\tp final\unla-tp-ayed-bodega-main\vino.cpp
+	<iostream>
+	<stdlib.h>
+	<string.h>
+	"vino.h"
+
+1633211700 source:f:\tarea 2021\algoritmos y estructuras de datos\tp final\unla-tp-ayed-bodega-main\lista.cpp
+	<iostream>
+	"Lista.h"
+
+1633208796 source:f:\tarea 2021\algoritmos y estructuras de datos\tp final\unla-tp-ayed-bodega-main\funcionescargararchivos.cpp
+	<iostream>
+	<conio.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<fstream>
+	"funcionesCargarArchivos.h"
+	"infoMensual.h"
+	"vino.h"
+	"cliente.h"
+	"lista.h"
+
+1633211630 source:f:\tarea 2021\algoritmos y estructuras de datos\tp final\unla-tp-ayed-bodega-main\ranking1.cpp
+	<iostream>
+	"Lista.h"
+	"infoMensual.h"
+	"vino.h"
+
+1633211972 f:\tarea 2021\algoritmos y estructuras de datos\tp final\unla-tp-ayed-bodega-main\rankingvinos.h
+	"vino.h"
+	"Lista.h"
+
+1633212236 source:f:\tarea 2021\algoritmos y estructuras de datos\tp final\unla-tp-ayed-bodega-main\rankingvinos.cpp
+	<iostream>
+	"RankingVinos.h"
+	"Lista.h"
+	"infoMensual.h"
+	"vino.h"
+

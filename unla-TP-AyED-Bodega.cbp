@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="unla-TP-AyED-Bodega" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/unla-TP-AyED-Bodega" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/unla-TP-AyED-Bodega" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+		</Compiler>
+		<Unit filename="Lista.cpp" />
+		<Unit filename="RankingVinos.cpp" />
+		<Unit filename="RankingVinos.h" />
+		<Unit filename="catalogos.txt" />
+		<Unit filename="cliente.cpp" />
+		<Unit filename="cliente.h" />
+		<Unit filename="elecion.txt" />
+		<Unit filename="funcionesCargarArchivos.cpp" />
+		<Unit filename="funcionesCargarArchivos.h" />
+		<Unit filename="infoMensual.cpp" />
+		<Unit filename="infoMensual.h" />
+		<Unit filename="lista.h" />
+		<Unit filename="main.cpp" />
+		<Unit filename="usuarios_test.txt" />
+		<Unit filename="vino.cpp" />
+		<Unit filename="vino.h" />
+		<Extensions>
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

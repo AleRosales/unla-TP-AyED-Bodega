@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include "cliente.hpp"
+#include "cliente.h"
 #include <cstring>
 
 using namespace std;
