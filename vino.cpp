@@ -35,3 +35,7 @@ void setsAnioCosecha(Vino a, int nuevoAnioCosecha){
 void setsTerroir(Vino a, char nuevoTerroir[50]){
    strcpy(a->terroir,nuevoTerroir);
 }
+
+char* getNombre(Vino v){
+    return v->bodega;
+}

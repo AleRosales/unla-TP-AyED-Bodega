@@ -5,6 +5,7 @@ using namespace std;
 Lista crearLista(){
     Lista lista=new listaStruct();
     lista->tamanio=0;
+    //lista->inicio=null;
     return lista;
 }
 
@@ -14,6 +15,7 @@ void agregarNodo(Lista lista,void* dato){
     newNodo->dato=dato;
     if(lista->tamanio>0){
         int i=1;
+        //aux es null¡?
         Nodo aux=lista->inicio;
         while(aux->siguiente!=NULL){
             i++;
