@@ -111,7 +111,7 @@
 
 1633379575 c:\users\pablo\documents\github\unla-tp-ayed-bodega\infomensual.h
 
-1633379575 c:\users\pablo\documents\github\unla-tp-ayed-bodega\vino.h
+1633991266 c:\users\pablo\documents\github\unla-tp-ayed-bodega\vino.h
 
 1633379575 c:\users\pablo\documents\github\unla-tp-ayed-bodega\lista.h
 
@@ -121,11 +121,11 @@
 	<string.h>
 	"infoMensual.h"
 
-1633379575 source:c:\users\pablo\documents\github\unla-tp-ayed-bodega\lista.cpp
+1633991266 source:c:\users\pablo\documents\github\unla-tp-ayed-bodega\lista.cpp
 	<iostream>
 	"Lista.h"
 
-1633654771 source:c:\users\pablo\documents\github\unla-tp-ayed-bodega\main.cpp
+1633991471 source:c:\users\pablo\documents\github\unla-tp-ayed-bodega\main.cpp
 	<iostream>
 	"lista.h"
 	"funcionesCargarArchivos.h"
@@ -133,19 +133,20 @@
 	"vino.h"
 	"cliente.h"
 	"RankingVinos.h"
+	"RankingBodegas.h"
 	"RankingVarietales.h"
 
 1633479600 c:\users\pablo\documents\github\unla-tp-ayed-bodega\rankingvinos.h
 	"vino.h"
 	"Lista.h"
 
-1633379575 source:c:\users\pablo\documents\github\unla-tp-ayed-bodega\vino.cpp
+1633991266 source:c:\users\pablo\documents\github\unla-tp-ayed-bodega\vino.cpp
 	<iostream>
 	<stdlib.h>
 	<string.h>
 	"vino.h"
 
-1633476832 source:c:\users\pablo\documents\github\unla-tp-ayed-bodega\rankingvinos.cpp
+1633991266 source:c:\users\pablo\documents\github\unla-tp-ayed-bodega\rankingvinos.cpp
 	<iostream>
 	"RankingVinos.h"
 	"Lista.h"
@@ -163,3 +164,20 @@
 	"string.h"
 
 1633655188 c:\users\pablo\documents\github\unla-tp-ayed-bodega\rankingvarietales.h
+
+1633991266 c:\users\pablo\documents\github\unla-tp-ayed-bodega\rankingbodegas.h
+	"lista.h"
+
+1633991266 source:c:\users\pablo\documents\github\unla-tp-ayed-bodega\rankingbodegas.cpp
+	<iostream>
+	<conio.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<fstream>
+	"lista.h"
+	"vino.h"
+	"infoMensual.h"
+	"funcionesCargarArchivos.h"
+	"rankingBodegas.h"
+
