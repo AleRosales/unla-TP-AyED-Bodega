@@ -31,7 +31,7 @@ void rankingPorVinos (Lista  seleccionados,Lista vinos){
     }
     cout <<endl<<"Ranking de vinos:"<<endl;
     //mostrar resultado
-    for(int b=1; b< ranking->tamanio ; b++){
+    for(int b=1; b< ranking->tamanio+1 ; b++){
         Nodo nodoRanking=nodoSeleccionado(ranking,b);
         RankingVinos rankingDato=(RankingVinos)nodoRanking->dato;
         Vino vino=rankingDato->vino;

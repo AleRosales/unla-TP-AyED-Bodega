@@ -27,6 +27,6 @@ void setsAnioCosecha(Vino a, int nuevoAnioCosecha);
 
 void setsTerroir(Vino a, char nuevoTerroir[50]);
 
-
+char* getNombre(Vino v);
 
 #endif // VINO_H_INCLUDED
