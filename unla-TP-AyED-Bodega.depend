@@ -79,3 +79,88 @@
 	"infoMensual.h"
 	"vino.h"
 
+1633379575 source:c:\users\pablo\documents\github\unla-tp-ayed-bodega\cliente.cpp
+	<iostream>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"cliente.h"
+	<cstring>
+
+1633379575 c:\users\pablo\documents\github\unla-tp-ayed-bodega\cliente.h
+
+1633379575 source:c:\users\pablo\documents\github\unla-tp-ayed-bodega\funcionescargararchivos.cpp
+	<iostream>
+	<conio.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<fstream>
+	"funcionesCargarArchivos.h"
+	"infoMensual.h"
+	"vino.h"
+	"cliente.h"
+	"lista.h"
+
+1633379575 c:\users\pablo\documents\github\unla-tp-ayed-bodega\funcionescargararchivos.h
+	"infoMensual.h"
+	"vino.h"
+	"cliente.h"
+	"lista.h"
+	<string.h>
+
+1633379575 c:\users\pablo\documents\github\unla-tp-ayed-bodega\infomensual.h
+
+1633379575 c:\users\pablo\documents\github\unla-tp-ayed-bodega\vino.h
+
+1633379575 c:\users\pablo\documents\github\unla-tp-ayed-bodega\lista.h
+
+1633379575 source:c:\users\pablo\documents\github\unla-tp-ayed-bodega\infomensual.cpp
+	<iostream>
+	<stdlib.h>
+	<string.h>
+	"infoMensual.h"
+
+1633379575 source:c:\users\pablo\documents\github\unla-tp-ayed-bodega\lista.cpp
+	<iostream>
+	"Lista.h"
+
+1633654771 source:c:\users\pablo\documents\github\unla-tp-ayed-bodega\main.cpp
+	<iostream>
+	"lista.h"
+	"funcionesCargarArchivos.h"
+	"infoMensual.h"
+	"vino.h"
+	"cliente.h"
+	"RankingVinos.h"
+	"RankingVarietales.h"
+
+1633479600 c:\users\pablo\documents\github\unla-tp-ayed-bodega\rankingvinos.h
+	"vino.h"
+	"Lista.h"
+
+1633379575 source:c:\users\pablo\documents\github\unla-tp-ayed-bodega\vino.cpp
+	<iostream>
+	<stdlib.h>
+	<string.h>
+	"vino.h"
+
+1633476832 source:c:\users\pablo\documents\github\unla-tp-ayed-bodega\rankingvinos.cpp
+	<iostream>
+	"RankingVinos.h"
+	"Lista.h"
+	"infoMensual.h"
+	"vino.h"
+
+1633991067 source:c:\users\pablo\documents\github\unla-tp-ayed-bodega\rankingvarietales.cpp
+	<iostream>
+	"RankingVinos.h"
+	"Lista.h"
+	"infoMensual.h"
+	"vino.h"
+	"cliente.h"
+	"RankingVarietales.h"
+	"string.h"
+
+1633655188 c:\users\pablo\documents\github\unla-tp-ayed-bodega\rankingvarietales.h
+

@@ -33,6 +33,8 @@
 			<Add option="-fexceptions" />
 		</Compiler>
 		<Unit filename="Lista.cpp" />
+		<Unit filename="RankingVarietales.cpp" />
+		<Unit filename="RankingVarietales.h" />
 		<Unit filename="RankingVinos.cpp" />
 		<Unit filename="RankingVinos.h" />
 		<Unit filename="catalogos.txt" />

@@ -5,6 +5,8 @@
 #include "vino.h"
 #include "cliente.h"
 #include "RankingVinos.h"
+#include "RankingVarietales.h"
+
 
 
 using namespace std;
@@ -19,16 +21,18 @@ int main()
     leerYpasarAseleccion(miListaSeleccion);
     leerYpasaraVinos(miListaVinos);
 
-    /*cout <<"Lista de clientes:"<<endl;
+    cout <<"Lista de clientes:"<<endl;
     mostrarLista(miListaCliente);
 
     cout <<"Lista de vinos:"<<endl;
     mostrarLista(miListaVinos);
 
     cout <<"Lista de seleccion vinos:"<<endl;
-    mostrarLista(miListaSeleccion);*/
+    mostrarLista(miListaSeleccion);
 
     rankingPorVinos(miListaSeleccion,miListaVinos);
+
+    rankingDeVarietales(miListaSeleccion,miListaCliente,miListaVinos);
 
     return 0;
 }
