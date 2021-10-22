@@ -1,4 +1,3 @@
-
 #ifndef RANKINGVARIETALES_H_INCLUDED
 #define RANKINGVARIETALES_H_INCLUDED
 
@@ -21,5 +20,7 @@ void rankingDeVarietales(Lista seleccionados, Lista clientes, Lista vinos);
 Lista rankingPorRangoEtario(Lista seleccionados, Lista clientes,Lista vinos, int valorEtarioInf, int valorEtarioSup);
 
 void mostrarRanking(Lista ranking);
+
+void ordenarListaAuxVarietales(Lista lista, Lista ordenada);
 
 #endif // RANKINGVARIETALES_H_INCLUDED

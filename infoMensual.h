@@ -6,6 +6,7 @@ typedef struct infoMesualEstructura * infoMesual;
 
 infoMesual crearInfoMensual();
 
+int getsIdUsuarioInfo(infoMesual a);
 int getsVino1(infoMesual a);
 int getsVino2(infoMesual a);
 int getsVino3(infoMesual a);

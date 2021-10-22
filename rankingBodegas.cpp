@@ -16,19 +16,20 @@ void lstBodegas(Lista catalogo, Lista infoSeleccionados)
     Lista lista =  crearLista();
     //Guarda los datos de los regiustros catalogo.txt primero en nodos(infoVinos)
     //Y luego en struct Vino
-    for(int i = 1; i < catalogo->tamanio; i++)
+
+
+    for(int i = 1; i <= catalogo->tamanio; i++)
     {
         Nodo infoVinos = nodoSeleccionado(catalogo,i);
         Vino vino = (Vino) infoVinos->dato;
-        for(int j = 1; j < infoSeleccionados->tamanio; j++)
+        for(int j = 1; j <= infoSeleccionados->tamanio; j++)
         {
             Nodo infoMen = nodoSeleccionado(infoSeleccionados,j);
-            infoMesual infoMensualDat = (infoMesual) infoMen->dato;
-            if(infoMensualDat->idVino1==vino->idVino || infoMensualDat->idVino2==vino->idVino ||
-                    infoMensualDat->idVino3==vino->idVino || infoMensualDat->idVino4==vino->idVino ||
-                    infoMensualDat->idVino5==vino->idVino || infoMensualDat->idVino6==vino->idVino)
+            infoMesual info = (infoMesual) infoMen->dato;
+            if(getsVino1(info)==getsVino(vino) ||getsVino2(info)==getsVino(vino)|| getsVino3(info)==getsVino(vino) ||
+               getsVino4(info)==getsVino(vino) || getsVino5(info)==getsVino(vino) || getsVino6(info)==getsVino(vino) )
             {
-                Bodega bod = buscarBodega(lista,getNombre(vino));
+                Bodega bod = buscarBodega(lista,getsNombreBodega(vino));
                 if(bod!=NULL)
                 {
                     bod->cant++;
@@ -37,16 +38,22 @@ void lstBodegas(Lista catalogo, Lista infoSeleccionados)
                 {
                     bod = new BodegaStruct;
                     bod->cant=1;
-                    strcpy(bod->nombreBodega, vino->bodega);
+                    strcpy(bod->nombreBodega, getsNombreBodega(vino));
                     agregarNodo(lista,bod);
                 }
+
             }
+
         }
     }
+     Lista ordenada=crearLista();
+
+    ordenarListaAuxBodega(lista,ordenada);
+
     cout <<endl<<"Ranking de bodegas:"<<endl;
-    for(int b=1; b< lista->tamanio+1 ; b++)
+    for(int b=1; b< ordenada->tamanio+1 ; b++)
     {
-        Nodo nodoRanking=nodoSeleccionado(lista,b);
+        Nodo nodoRanking=nodoSeleccionado(ordenada,b);
         Bodega bod=(Bodega)nodoRanking->dato;
         bod->nombreBodega;
         cout <<"Nro en lista:"<<nodoRanking->nro<<" -Bodega "<<bod->nombreBodega<<" -Cant seleccionada: "<<bod->cant<<endl;
@@ -77,4 +84,48 @@ Bodega buscarBodega(Lista lista,char nombre[50])
     {
         return NULL;
     }
+}
+
+void ordenarListaAuxBodega(Lista lista, Lista ordenada){
+    Nodo actual;
+    Nodo siguiente;
+    actual=lista->inicio;
+    Nodo aux=actual;
+    Nodo auxNodo;
+    int nro;
+
+    while (actual!=NULL )
+    {
+        nro=actual->nro;
+        siguiente=actual->siguiente;
+        Bodega auxMaximo=(Bodega)actual->dato;
+        while( siguiente !=NULL )
+        {
+            Bodega rankig13=(Bodega)siguiente->dato;
+          if(auxMaximo->cant<rankig13->cant)
+            {
+            auxMaximo=rankig13;
+            nro=siguiente->nro;
+            }
+            siguiente=siguiente->siguiente;
+
+        }
+
+        Bodega nuevo=new BodegaStruct;
+        auxNodo=nodoSeleccionado(lista,nro);
+        Bodega bodegaAnt=(Bodega)auxNodo->dato;
+        nuevo->cant=bodegaAnt->cant;
+        strcpy(nuevo->nombreBodega,bodegaAnt->nombreBodega);
+
+        agregarNodo(ordenada,nuevo);
+        eliminarNodo(lista,nro);
+
+        actual=lista->inicio;
+
+
+    }
+
+
+
+
 }

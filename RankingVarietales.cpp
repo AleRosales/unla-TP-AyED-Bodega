@@ -9,14 +9,19 @@
 
 void rankingDeVarietales(Lista seleccionados, Lista clientes, Lista vinos){
     Lista rankingRango1 = rankingPorRangoEtario(seleccionados, clientes, vinos, 0, 30);
-//    ordenarRanking(rankingRango3);
-    mostrarRanking(rankingRango1);
+     Lista ordenada=crearLista();
+    ordenarListaAuxVarietales(rankingRango1,ordenada);
+    mostrarRanking(ordenada);
     Lista rankingRango2 = rankingPorRangoEtario(seleccionados, clientes, vinos, 30, 50);
-//    ordenarRanking(rankingRango3);
-    mostrarRanking(rankingRango2);
+    Lista ordenada1=crearLista();
+    ordenarListaAuxVarietales(rankingRango2,ordenada1);
+    mostrarRanking(ordenada1);
+
+
     Lista rankingRango3 = rankingPorRangoEtario(seleccionados, clientes, vinos, 50, 1000);
-//    ordenarRanking(rankingRango3);
-    mostrarRanking(rankingRango3);
+    Lista ordenada2=crearLista();
+    ordenarListaAuxVarietales(rankingRango3,ordenada2);
+    mostrarRanking(ordenada2);
 
 }
 //rankingPorRangoEtario ?
@@ -26,26 +31,26 @@ Lista rankingPorRangoEtario(Lista seleccionados, Lista clientes,Lista vinos, int
 
     while (nodoActual != NULL){
         infoMesual seleccionActual = (infoMesual) nodoActual->dato;
-        int edadClienteActual = traerEdadCliente(clientes, seleccionActual->idUsuario);
+        int edadClienteActual = traerEdadCliente(clientes, getsIdUsuarioInfo(seleccionActual));
 
         if (edadClienteActual > valorEtarioInf && edadClienteActual < valorEtarioSup){
 
-            agregarNodo(listaResultante, nodoActual);
-
-            Vino vino1 = traerVino(vinos, seleccionActual->idVino1);
-            Vino vino2 =traerVino(vinos, seleccionActual->idVino2);
-            Vino vino3 =traerVino(vinos, seleccionActual->idVino3);
-            Vino vino4 =traerVino(vinos, seleccionActual->idVino4);
-            Vino vino5 =traerVino(vinos, seleccionActual->idVino5);
-            Vino vino6 =traerVino(vinos, seleccionActual->idVino6);
 
 
-            agregarVarietal(listaResultante, vino1->varietal);
-            agregarVarietal(listaResultante, vino2->varietal);
-            agregarVarietal(listaResultante, vino3->varietal);
-            agregarVarietal(listaResultante, vino4->varietal);
-            agregarVarietal(listaResultante, vino5->varietal);
-            agregarVarietal(listaResultante, vino6->varietal);
+            Vino vino1 = traerVino(vinos, getsVino1(seleccionActual));
+            Vino vino2 =traerVino(vinos, getsVino2(seleccionActual));
+            Vino vino3 =traerVino(vinos, getsVino3(seleccionActual));
+            Vino vino4 =traerVino(vinos, getsVino4(seleccionActual));
+            Vino vino5 =traerVino(vinos, getsVino5(seleccionActual));
+            Vino vino6 =traerVino(vinos, getsVino6(seleccionActual));
+
+
+            agregarVarietal(listaResultante,getsVarietal(vino1));
+            agregarVarietal(listaResultante, getsVarietal(vino2));
+            agregarVarietal(listaResultante,getsVarietal(vino3));
+            agregarVarietal(listaResultante, getsVarietal(vino4));
+            agregarVarietal(listaResultante, getsVarietal(vino5));
+            agregarVarietal(listaResultante, getsVarietal(vino6));
 
 
         }
@@ -95,7 +100,7 @@ Vino traerVino(Lista vinos,int idBuscado){
     Vino encontrado = NULL;
     while(nodoActual != NULL && encontrado == NULL){
         Vino vinoActual = (Vino) nodoActual->dato;
-        if(vinoActual->idVino == idBuscado){
+        if(getsVino(vinoActual)== idBuscado){
             encontrado = vinoActual;
         }
         nodoActual = nodoActual->siguiente;
@@ -110,14 +115,52 @@ Vino traerVino(Lista vinos,int idBuscado){
 void mostrarRanking(Lista ranking){
 
     Nodo nodoActual = ranking->inicio;
-     std::cout<<"Ranking de varietales:"<<std::endl;
+     std::cout<<"\nRanking de varietales:"<<std::endl;
     while(nodoActual != NULL){
             RankingVarietales puestoActual = (RankingVarietales) nodoActual->dato;
-            char etiquetaVarietal [50];
-             strcpy(puestoActual->varietal,etiquetaVarietal);
-            std::cout<<"puesto "<<puestoActual->posicion<<"/t varietal: "<<etiquetaVarietal<<"/t Cant.selecciones: "<<puestoActual->cantidadSelecciones<<std::endl;
+            std::cout<<"puesto "<<nodoActual->nro<<" varietal: "<<puestoActual->varietal<<"/t Cant.selecciones: "<<puestoActual->cantidadSelecciones<<std::endl;
 
             nodoActual = nodoActual->siguiente;
     }
 
+}
+
+void ordenarListaAuxVarietales(Lista lista, Lista ordenada){
+    Nodo actual;
+    Nodo siguiente;
+    actual=lista->inicio;
+    Nodo aux=actual;
+    Nodo auxNodo;
+    int posicion=0;
+    int nro;
+
+    while (actual!=NULL )
+    {
+        nro=actual->nro;
+        siguiente=actual->siguiente;
+        RankingVarietales auxMaximo=(RankingVarietales)actual->dato;
+        while( siguiente !=NULL )
+        {
+            RankingVarietales rankig13=(RankingVarietales)siguiente->dato;
+          if(auxMaximo->cantidadSelecciones<rankig13->cantidadSelecciones)
+            {
+            auxMaximo=rankig13;
+            nro=siguiente->nro;
+            }
+            siguiente=siguiente->siguiente;
+
+        }
+        RankingVarietales nuevo = new RankingVarietalesStruct;
+        auxNodo=nodoSeleccionado(lista,nro);
+        RankingVarietales varietalesAnt=(RankingVarietales)auxNodo->dato;
+        nuevo->cantidadSelecciones=varietalesAnt->cantidadSelecciones;
+        strcpy(nuevo->varietal,varietalesAnt->varietal);
+
+        agregarNodo(ordenada,nuevo);
+        eliminarNodo(lista,nro);
+
+        actual=lista->inicio;
+
+
+    }
 }

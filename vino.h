@@ -14,6 +14,8 @@ char * getsetiqueta(Vino a);
 int getsAnioCosecha(Vino a);
 
 char * getsNombreBodega(Vino a);
+char * getsVarietal(Vino a);
+
 
 void setsIdVino(Vino a, int nuevoIdvino);
 

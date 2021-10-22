@@ -23,6 +23,10 @@ infoMesual crearInfoMensual(){
     return e;
 }
 
+int getsIdUsuarioInfo(infoMesual a){
+    return a->idUsuario;
+}
+
 int getsVino1(infoMesual a){
     return a->idVino1;
 }

@@ -38,6 +38,9 @@ char * getsetiqueta(Vino a){
 char * getsNombreBodega(Vino a){
     return a->bodega;
 }
+char * getsVarietal(Vino a){
+    return a->varietal;
+}
 
 int getsAnioCosecha(Vino a){
    return a->anioCosecha;

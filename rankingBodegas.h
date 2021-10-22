@@ -1,5 +1,5 @@
-#ifndef RANKINGBODEGAS_H
-#define RANKINGBODEGAS_H
+#ifndef RANKINGBODEGAS_H_INCLUDED
+#define RANKINGBODEGAS_H_INCLUDED
 #include "lista.h"
 
 //Estructura que guarda el nombre de una bodega y la lista de vinos que contiene
@@ -16,5 +16,6 @@ typedef struct BodegaStruct{
 void lstBodegas(Lista catalogo, Lista info);
 
 Bodega buscarBodega(Lista lista,char nombre[50]);
-#endif /* RANKINGBODEGAS_H */
 
+void ordenarListaAuxBodega(Lista lista, Lista ordenada);
+#endif // RANKINGBODEGAS_H_INCLUDED
