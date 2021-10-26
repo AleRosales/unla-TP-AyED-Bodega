@@ -18,19 +18,15 @@ struct VinoEstructura{
         };
 
 Vino crearVino(){
-
     Vino e = new VinoEstructura;
-
     return e;
-
 }
 
 
 int getsVino(Vino a){
-
 return a->idVino;
-
 }
+
 char * getsetiqueta(Vino a){
    return a->etiqueta;
 }

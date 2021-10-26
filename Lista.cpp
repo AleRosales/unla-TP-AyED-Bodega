@@ -1,21 +1,21 @@
 #include <iostream>
+#include<fstream>
 #include "Lista.h"
+#include "funcionesCargarArchivos.h"
+
 using namespace std;
 
 Lista crearLista(){
     Lista lista=new listaStruct();
     lista->tamanio=0;
-    //lista->inicio=null;
     return lista;
 }
-
 
 void agregarNodo(Lista lista,void* dato){
     Nodo newNodo=new nodo();
     newNodo->dato=dato;
     if(lista->tamanio>0){
         int i=1;
-        //aux es null¡?
         Nodo aux=lista->inicio;
         while(aux->siguiente!=NULL){
             i++;
@@ -52,7 +52,6 @@ void eliminarNodo(Lista lista,int nro){
             if(ant!=NULL){
                 ant->siguiente=aux->siguiente;
             }else{
-                //elimina el 1ro de la lista
                 lista->inicio=aux->siguiente;
             }
             Nodo sig=aux->siguiente;
@@ -134,4 +133,19 @@ void mostrarLista(Lista lista){
         cout << "Nodo nro:"<<nodo->nro<<"  Dato:"<<(nodo->dato)<< endl;
         nodo=nodo->siguiente;
     }
+}
+
+int ultimoAnio(){
+    Lista elecciones = crearLista();
+    leerYpasarAseleccion(elecciones);
+    int anio = 0;
+    for(int i = 1; i <= elecciones->tamanio; i++){
+        Nodo nodoInforMensual=nodoSeleccionado(elecciones,i);
+        infoMesual info = (infoMesual) nodoInforMensual->dato;
+        if(anio<getsAnioSeleccion(info)){
+            anio = getsAnioSeleccion(info);
+        }
+    }
+
+    return anio;
 }

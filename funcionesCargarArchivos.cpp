@@ -10,7 +10,6 @@
 #include "cliente.h"
 #include "lista.h"
 
-
 using namespace std;
 
 void leerYpasarAstructConString(Lista clien){
@@ -54,7 +53,6 @@ void leerYpasarAseleccion(Lista selec){
     }
     archivo.close();
     cout<<"Tamanio seleccion:"<<selec->tamanio<<endl;
-
 }
 
 void leerYpasaraVinos(Lista vin){

@@ -41,16 +41,10 @@ char * getsDireccion(Cliente a)
     return a->direccion;
 }
 
-
-
 void setsNombre(Cliente a, char nuevoNombre[30]){
     strcpy(a->nombre,nuevoNombre);
 }
-/*
-void setsApellido(Cliente a, char nuevoApellido[50]){
-    strcpy(a->apellido,nuevoApellido);
-}
-*/
+
 void setsDireccion(Cliente a, char nuevoDireccion[50]){
 
     strcpy(a->direccion,nuevoDireccion);

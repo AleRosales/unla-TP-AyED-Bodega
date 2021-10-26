@@ -66,4 +66,5 @@ Nodo anteriorNodo(Lista lista,Nodo nodo);
 
 void mostrarLista(Lista lista);
 
+int ultimoAnio();
 #endif

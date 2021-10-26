@@ -7,6 +7,7 @@
 #include "RankingVarietales.h"
 #include "string.h"
 
+
 void rankingDeVarietales(Lista seleccionados, Lista clientes, Lista vinos){
     Lista rankingRango1 = rankingPorRangoEtario(seleccionados, clientes, vinos, 0, 30);
      Lista ordenada=crearLista();
@@ -24,7 +25,7 @@ void rankingDeVarietales(Lista seleccionados, Lista clientes, Lista vinos){
     mostrarRanking(ordenada2);
 
 }
-//rankingPorRangoEtario ?
+
 Lista rankingPorRangoEtario(Lista seleccionados, Lista clientes,Lista vinos, int valorEtarioInf, int valorEtarioSup) {
     Lista listaResultante = crearLista();
     Nodo nodoActual = seleccionados->inicio;
@@ -108,18 +109,13 @@ Vino traerVino(Lista vinos,int idBuscado){
     return encontrado;
 }
 
-//void ordenarRanking(Lista lista){
-//
-//}
-
 void mostrarRanking(Lista ranking){
 
     Nodo nodoActual = ranking->inicio;
-     std::cout<<"\nRanking de varietales:"<<std::endl;
+    std::cout<<"\nRanking de varietales:"<<std::endl;
     while(nodoActual != NULL){
             RankingVarietales puestoActual = (RankingVarietales) nodoActual->dato;
             std::cout<<"puesto "<<nodoActual->nro<<" varietal: "<<puestoActual->varietal<<"/t Cant.selecciones: "<<puestoActual->cantidadSelecciones<<std::endl;
-
             nodoActual = nodoActual->siguiente;
     }
 
@@ -134,21 +130,19 @@ void ordenarListaAuxVarietales(Lista lista, Lista ordenada){
     int posicion=0;
     int nro;
 
-    while (actual!=NULL )
-    {
+    while (actual!=NULL ){
+
         nro=actual->nro;
         siguiente=actual->siguiente;
         RankingVarietales auxMaximo=(RankingVarietales)actual->dato;
-        while( siguiente !=NULL )
-        {
+        while( siguiente !=NULL ){
+
             RankingVarietales rankig13=(RankingVarietales)siguiente->dato;
-          if(auxMaximo->cantidadSelecciones<rankig13->cantidadSelecciones)
-            {
+            if(auxMaximo->cantidadSelecciones<rankig13->cantidadSelecciones){
             auxMaximo=rankig13;
             nro=siguiente->nro;
             }
             siguiente=siguiente->siguiente;
-
         }
         RankingVarietales nuevo = new RankingVarietalesStruct;
         auxNodo=nodoSeleccionado(lista,nro);
@@ -160,7 +154,6 @@ void ordenarListaAuxVarietales(Lista lista, Lista ordenada){
         eliminarNodo(lista,nro);
 
         actual=lista->inicio;
-
 
     }
 }

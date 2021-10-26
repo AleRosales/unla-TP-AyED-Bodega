@@ -181,3 +181,117 @@
 	"funcionesCargarArchivos.h"
 	"rankingBodegas.h"
 
+1635220967 source:c:\users\usuario\desktop\unla-tp-ayed-bodega\cliente.cpp
+	<iostream>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"cliente.h"
+
+1635220625 c:\users\usuario\desktop\unla-tp-ayed-bodega\cliente.h
+
+1635221419 source:c:\users\usuario\desktop\unla-tp-ayed-bodega\funcionescargararchivos.cpp
+	<iostream>
+	<conio.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<fstream>
+	"funcionesCargarArchivos.h"
+	"infoMensual.h"
+	"vino.h"
+	"cliente.h"
+	"lista.h"
+
+1635217800 c:\users\usuario\desktop\unla-tp-ayed-bodega\funcionescargararchivos.h
+	"infoMensual.h"
+	"vino.h"
+	"cliente.h"
+	"lista.h"
+	<string.h>
+
+1634969179 c:\users\usuario\desktop\unla-tp-ayed-bodega\infomensual.h
+
+1635217871 c:\users\usuario\desktop\unla-tp-ayed-bodega\vino.h
+
+1635197528 c:\users\usuario\desktop\unla-tp-ayed-bodega\lista.h
+
+1634969741 source:c:\users\usuario\desktop\unla-tp-ayed-bodega\infomensual.cpp
+	<iostream>
+	<stdlib.h>
+	<string.h>
+	"infoMensual.h"
+
+1635217327 source:c:\users\usuario\desktop\unla-tp-ayed-bodega\lista.cpp
+	<iostream>
+	<fstream>
+	"Lista.h"
+	"funcionesCargarArchivos.h"
+
+1635217536 source:c:\users\usuario\desktop\unla-tp-ayed-bodega\rankingbodegas.cpp
+	<iostream>
+	<conio.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<fstream>
+	"lista.h"
+	"vino.h"
+	"infoMensual.h"
+	"funcionesCargarArchivos.h"
+	"rankingBodegas.h"
+
+1635217832 c:\users\usuario\desktop\unla-tp-ayed-bodega\rankingbodegas.h
+	"lista.h"
+
+1635219825 source:c:\users\usuario\desktop\unla-tp-ayed-bodega\rankingvarietales.cpp
+	<iostream>
+	"RankingVinos.h"
+	"Lista.h"
+	"infoMensual.h"
+	"vino.h"
+	"cliente.h"
+	"RankingVarietales.h"
+	"string.h"
+
+1635107926 c:\users\usuario\desktop\unla-tp-ayed-bodega\rankingvinos.h
+	"vino.h"
+	"lista.h"
+
+1634928524 c:\users\usuario\desktop\unla-tp-ayed-bodega\rankingvarietales.h
+
+1635217757 source:c:\users\usuario\desktop\unla-tp-ayed-bodega\rankingvinos.cpp
+	<iostream>
+	"rankingVinos.h"
+	"lista.h"
+	"infoMensual.h"
+	"vino.h"
+
+1635217776 source:c:\users\usuario\desktop\unla-tp-ayed-bodega\vino.cpp
+	<iostream>
+	<stdlib.h>
+	<string.h>
+	"vino.h"
+
+1635219314 source:c:\users\usuario\desktop\unla-tp-ayed-bodega\main.cpp
+	<iostream>
+	"lista.h"
+	"funcionesCargarArchivos.h"
+	"RankingVinos.h"
+	"RankingBodegas.h"
+	"RankingVarietales.h"
+
+1635197567 source:c:\users\usuario\desktop\unla-tp-ayed-bodega\prueba.cpp
+	"lista.h"
+	"funcionesCargarArchivos.h"
+	"infoMensual.h"
+	"vino.h"
+	"cliente.h"
+	"RankingVinos.h"
+	"RankingBodegas.h"
+	"RankingVarietales.h"
+	<conio.h>
+	<stdio.h>
+	<stdlib.h>
+	<fstream>
+

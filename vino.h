@@ -6,16 +6,12 @@ typedef struct VinoEstructura * Vino;
 
 Vino crearVino();
 
-
 int getsVino(Vino a);
-
-char * getsetiqueta(Vino a);
-
 int getsAnioCosecha(Vino a);
 
+char * getsetiqueta(Vino a);
 char * getsNombreBodega(Vino a);
 char * getsVarietal(Vino a);
-
 
 void setsIdVino(Vino a, int nuevoIdvino);
 
@@ -30,7 +26,5 @@ void setsVarietal(Vino a, char nuevoVarietal[50]);
 void setsAnioCosecha(Vino a, int nuevoAnioCosecha);
 
 void setsTerroir(Vino a, char nuevoTerroir[50]);
-
-
 
 #endif // VINO_H_INCLUDED

@@ -6,38 +6,39 @@
 
 using namespace std;
 
-void rankingPorVinos (Lista  seleccionados,Lista vinos)
-{
+void rankingPorVinos (Lista  seleccionados,Lista vinos){
     Lista ranking = crearLista();
+    int cont = 0;
+    int ultimo = ultimoAnio();
 
-    for(int b=1; b<= vinos->tamanio ; b++)
-    {
+    for(int b=1; b<= vinos->tamanio ; b++){
+
         Nodo nodoVino=nodoSeleccionado(vinos,b);
         Vino vino=(Vino)nodoVino->dato;
-        for(int i=1; i<= seleccionados->tamanio ; i++)
-        {
+
+        for(int i=1; i<= seleccionados->tamanio ; i++){
             Nodo nodoInforMensual=nodoSeleccionado(seleccionados,i);
             infoMesual info = (infoMesual) nodoInforMensual->dato;
-            if(getsVino1(info)==getsVino(vino) ||getsVino2(info)==getsVino(vino)|| getsVino3(info)==getsVino(vino) ||
-                    getsVino4(info)==getsVino(vino) || getsVino5(info)==getsVino(vino) || getsVino6(info)==getsVino(vino) )
-            {
-                RankingVinos rankingDato=buscarVino(ranking,getsVino(vino));
-                if (rankingDato!=NULL)
-                {
-                    rankingDato->cantidadSelecciones+=1;
-                }
-                else
-                {
-                    rankingDato=new RankingVinosStruct();
-                    rankingDato->cantidadSelecciones=1;
-                    rankingDato->vino=vino;
-                    agregarNodo(ranking,rankingDato);
-                }
 
+            if(getsAnioSeleccion(info) == ultimo){
+                if(getsVino1(info)==getsVino(vino) ||getsVino2(info)==getsVino(vino)|| getsVino3(info)==getsVino(vino) ||
+                        getsVino4(info)==getsVino(vino) || getsVino5(info)==getsVino(vino) || getsVino6(info)==getsVino(vino)){
+
+                    RankingVinos rankingDato=buscarVino(ranking,getsVino(vino));
+
+                    if (rankingDato!=NULL){
+                        rankingDato->cantidadSelecciones+=1;
+                    }
+                    else
+                    {
+                        rankingDato=new RankingVinosStruct();
+                        rankingDato->cantidadSelecciones=1;
+                        rankingDato->vino=vino;
+                        agregarNodo(ranking,rankingDato);
+                    }
+                }
             }
-
         }
-
     }
 
     Lista ordenada=crearLista();
@@ -47,16 +48,16 @@ void rankingPorVinos (Lista  seleccionados,Lista vinos)
 
 }
 
-RankingVinos buscarVino(Lista lista,int idVino)
-{
+RankingVinos buscarVino(Lista lista,int idVino){
+
     Nodo aux=lista->inicio;
     int encontrado=0;
-    while(aux!=NULL && encontrado==0)
-    {
+    while(aux!=NULL && encontrado==0){
+
         RankingVinos rankig=(RankingVinos) aux->dato;
         Vino vino=rankig->vino;
-        if(getsVino(vino)==idVino)
-        {
+
+        if(getsVino(vino)==idVino){
             encontrado=1;
         }
         else
@@ -64,8 +65,7 @@ RankingVinos buscarVino(Lista lista,int idVino)
             aux=aux->siguiente;
         }
     }
-    if(encontrado==1)
-    {
+    if(encontrado==1){
         return (RankingVinos)aux->dato;
     }
     else
@@ -75,8 +75,7 @@ RankingVinos buscarVino(Lista lista,int idVino)
 }
 
 
-void ordenarListaAux(Lista lista, Lista ordenada)
-{
+void ordenarListaAux(Lista lista, Lista ordenada){
     Nodo actual;
     Nodo siguiente;
     actual=lista->inicio;
@@ -86,24 +85,21 @@ void ordenarListaAux(Lista lista, Lista ordenada)
     int nro;
     int i=1;
 
-    while (actual!=NULL )
-    {
+    while (actual!=NULL ){
         nro=actual->nro;
         siguiente=actual->siguiente;
         RankingVinos rankig1=(RankingVinos)actual->dato;
-        while( siguiente !=NULL )
-        {
 
-            RankingVinos rankig2=(RankingVinos)siguiente->dato;
+        while(siguiente !=NULL ){
 
-          if(rankig1->cantidadSelecciones<rankig2->cantidadSelecciones)
-            {
+        RankingVinos rankig2=(RankingVinos)siguiente->dato;
+          if(rankig1->cantidadSelecciones<rankig2->cantidadSelecciones){
                 rankig1=rankig2;
                 nro=siguiente->nro;
             }
             siguiente=siguiente->siguiente;
-
         }
+
         RankingVinos nuevo=new RankingVinosStruct;
         auxNodo=nodoSeleccionado(lista,nro);
         RankingVinos vinoAnt=(RankingVinos)auxNodo->dato;
@@ -121,44 +117,35 @@ void ordenarListaAux(Lista lista, Lista ordenada)
 
 }
 
-
-
-
 void mostrarListaRankigVino(Lista lista){
     int j=1;
+
     while(j<=lista->tamanio){
 
-        Nodo nodoRanking=nodoSeleccionado(lista,j);
+    Nodo nodoRanking=nodoSeleccionado(lista,j);
        RankingVinos rankingDato=(RankingVinos)nodoRanking->dato;
        Vino vino1=rankingDato->vino;
 
         cout <<"Nro en lista:"<<nodoRanking->nro<<" -Vino "<<getsVino(vino1)<<":"<<getsetiqueta(vino1)<<" "<<getsAnioCosecha(vino1)<<" -Cant seleccionada: "<<rankingDato->cantidadSelecciones<<endl;
         j++;
     }
-
-
-
 }
 
-void ordenarLista(Lista lista)
-{
+void ordenarLista(Lista lista){
     Nodo actual;
     Nodo siguiente;
     Nodo averQueHay;
     actual=lista->inicio;
 
     Vino aux;
-    while (actual!=NULL)
-    {
+    while (actual!=NULL){
         siguiente=actual->siguiente;
-        while( siguiente !=NULL)
-        {
+        while( siguiente !=NULL){
 
             RankingVinos rankig1=(RankingVinos)actual->dato;
             RankingVinos rankig2=(RankingVinos)siguiente->dato;
 
-            if(rankig1->cantidadSelecciones<rankig2->cantidadSelecciones)
-            {
+            if(rankig1->cantidadSelecciones<rankig2->cantidadSelecciones){
                 aux=rankig2->vino;
                 rankig2->vino=rankig1->vino;
                 rankig1->vino=aux;
@@ -168,7 +155,6 @@ void ordenarLista(Lista lista)
 
             }
             siguiente=siguiente->siguiente;
-
         }
         actual=actual->siguiente;
     }

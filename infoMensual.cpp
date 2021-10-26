@@ -27,6 +27,10 @@ int getsIdUsuarioInfo(infoMesual a){
     return a->idUsuario;
 }
 
+int getsAnioSeleccion(infoMesual a){
+    return a->anioSeleccion;
+}
+
 int getsVino1(infoMesual a){
     return a->idVino1;
 }
