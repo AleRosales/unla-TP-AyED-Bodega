@@ -48,7 +48,6 @@ void lstBodegas(Lista vinos, Lista infoSeleccionados)
     {
         Nodo nodoRanking=nodoSeleccionado(ordenada,b);
         Bodega bod=(Bodega)nodoRanking->dato;
-        bod->nombreBodega;
         cout <<"Nro en lista:"<<nodoRanking->nro<<" -Bodega "<<bod->nombreBodega<<" -Cant seleccionada: "<<bod->cant<<endl;
     }
 }
@@ -102,7 +101,6 @@ void ordenarListaAuxBodega(Lista lista, Lista ordenada){
     Nodo actual;
     Nodo siguiente;
     actual=lista->inicio;
-    Nodo aux=actual;
     Nodo auxNodo;
     int nro;
 

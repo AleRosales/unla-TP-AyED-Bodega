@@ -90,9 +90,7 @@ void ordenarListaAux(Lista lista, Lista ordenada)
     Nodo actual;
     Nodo siguiente;
     actual=lista->inicio;
-    Nodo aux=actual;
     Nodo auxNodo;
-    Nodo mostrar;
     int nro;
     int i=1;
 
@@ -154,7 +152,6 @@ void ordenarLista(Lista lista)
 {
     Nodo actual;
     Nodo siguiente;
-    Nodo averQueHay;
     actual=lista->inicio;
 
     Vino aux;

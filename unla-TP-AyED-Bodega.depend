@@ -295,3 +295,105 @@
 	<stdlib.h>
 	<fstream>
 
+1635534406 source:f:\tarea 2021\algoritmos y estructuras de datos\unla-tp-ayed-bodega-main\cliente.cpp
+	<iostream>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"cliente.h"
+
+1635534406 f:\tarea 2021\algoritmos y estructuras de datos\unla-tp-ayed-bodega-main\cliente.h
+
+1635534406 source:f:\tarea 2021\algoritmos y estructuras de datos\unla-tp-ayed-bodega-main\funcionescargararchivos.cpp
+	<iostream>
+	<conio.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<fstream>
+	"funcionesCargarArchivos.h"
+	"infoMensual.h"
+	"vino.h"
+	"cliente.h"
+	"lista.h"
+
+1635534406 f:\tarea 2021\algoritmos y estructuras de datos\unla-tp-ayed-bodega-main\funcionescargararchivos.h
+	"infoMensual.h"
+	"vino.h"
+	"cliente.h"
+	"lista.h"
+	<string.h>
+
+1635534406 f:\tarea 2021\algoritmos y estructuras de datos\unla-tp-ayed-bodega-main\infomensual.h
+
+1635534406 f:\tarea 2021\algoritmos y estructuras de datos\unla-tp-ayed-bodega-main\vino.h
+
+1635534406 f:\tarea 2021\algoritmos y estructuras de datos\unla-tp-ayed-bodega-main\lista.h
+
+1635534406 source:f:\tarea 2021\algoritmos y estructuras de datos\unla-tp-ayed-bodega-main\infomensual.cpp
+	<iostream>
+	<stdlib.h>
+	<string.h>
+	"infoMensual.h"
+
+1635534406 source:f:\tarea 2021\algoritmos y estructuras de datos\unla-tp-ayed-bodega-main\lista.cpp
+	<iostream>
+	<fstream>
+	"Lista.h"
+	"funcionesCargarArchivos.h"
+
+1635534406 source:f:\tarea 2021\algoritmos y estructuras de datos\unla-tp-ayed-bodega-main\main.cpp
+	<iostream>
+	"lista.h"
+	"funcionesCargarArchivos.h"
+	"RankingVinos.h"
+	"RankingBodegas.h"
+	"RankingVarietales.h"
+
+1635534406 f:\tarea 2021\algoritmos y estructuras de datos\unla-tp-ayed-bodega-main\rankingvinos.h
+	"vino.h"
+	"lista.h"
+
+1635534406 f:\tarea 2021\algoritmos y estructuras de datos\unla-tp-ayed-bodega-main\rankingbodegas.h
+	"lista.h"
+
+1635619254 f:\tarea 2021\algoritmos y estructuras de datos\unla-tp-ayed-bodega-main\rankingvarietales.h
+
+1635619304 source:f:\tarea 2021\algoritmos y estructuras de datos\unla-tp-ayed-bodega-main\rankingbodegas.cpp
+	<iostream>
+	<conio.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<fstream>
+	"lista.h"
+	"vino.h"
+	"infoMensual.h"
+	"funcionesCargarArchivos.h"
+	"rankingBodegas.h"
+	"RankingVarietales.h"
+
+1635619254 source:f:\tarea 2021\algoritmos y estructuras de datos\unla-tp-ayed-bodega-main\rankingvarietales.cpp
+	<iostream>
+	"RankingVinos.h"
+	"Lista.h"
+	"infoMensual.h"
+	"vino.h"
+	"cliente.h"
+	"RankingVarietales.h"
+	"string.h"
+
+1635534406 source:f:\tarea 2021\algoritmos y estructuras de datos\unla-tp-ayed-bodega-main\vino.cpp
+	<iostream>
+	<stdlib.h>
+	<string.h>
+	"vino.h"
+
+1635618758 source:f:\tarea 2021\algoritmos y estructuras de datos\unla-tp-ayed-bodega-main\rankingvinos.cpp
+	<iostream>
+	"rankingVinos.h"
+	"lista.h"
+	"infoMensual.h"
+	"vino.h"
+	"RankingVarietales.h"
+
