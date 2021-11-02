@@ -12,7 +12,7 @@ int main(){
     Lista miListaVinos=crearLista();
     Lista miListaSeleccion=crearLista();
 
-    leerYpasarAstructConString(miListaCliente);
+    leerYpasarAusuarios(miListaCliente);
     leerYpasarAseleccion(miListaSeleccion);
     leerYpasaraVinos(miListaVinos);
     int opcion;
