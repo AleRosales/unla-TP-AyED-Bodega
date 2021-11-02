@@ -12,18 +12,21 @@ using namespace std;
 
 void rankingDeVarietales(Lista seleccionados, Lista clientes, Lista vinos){
     Lista rankingRango1 = rankingPorRangoEtario(seleccionados, clientes, vinos, 0, 30);
-     Lista ordenada=crearLista();
+    Lista ordenada=crearLista();
     ordenarListaAuxVarietales(rankingRango1,ordenada);
+    cout<<"Ranking de varietales de menores de 30:"<<endl;
     mostrarRanking(ordenada);
     Lista rankingRango2 = rankingPorRangoEtario(seleccionados, clientes, vinos, 30, 50);
     Lista ordenada1=crearLista();
     ordenarListaAuxVarietales(rankingRango2,ordenada1);
+    cout<<"Ranking de varietales de entre 30 y 50:"<<endl;
     mostrarRanking(ordenada1);
 
 
     Lista rankingRango3 = rankingPorRangoEtario(seleccionados, clientes, vinos, 50, 1000);
     Lista ordenada2=crearLista();
     ordenarListaAuxVarietales(rankingRango3,ordenada2);
+    cout<<"Ranking de varietales de mayores de 50:"<<endl;
     mostrarRanking(ordenada2);
 
 }
@@ -118,7 +121,6 @@ Vino traerVino(Lista vinos,int idBuscado){
 void mostrarRanking(Lista ranking){
 
     Nodo nodoActual = ranking->inicio;
-     cout<<"Ranking de varietales:"<<std::endl;
      cout << setw( 70 ) << setfill( '-' ) << '\n' << setfill( ' ' );
     cout << "| "<< left << setw( 14 ) << "Posicion"<< "|" << right << setw( 1) << " Varietal"  << right << setw( 21 )<< "|"<< "Cantidad Selecionado" << " |"<<endl;
     cout << setw( 70 ) << setfill( '-' ) << '\n' << setfill( ' ' ) << '\n';
