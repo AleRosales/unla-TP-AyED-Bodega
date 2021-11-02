@@ -5,17 +5,6 @@
 
 using namespace std;
 
-struct infoMesualEstructura{
-        int idUsuario;
-        int mesSeleccion;
-        int anioSeleccion;
-        int idVino1;
-        int idVino2;
-        int idVino3;
-        int idVino4;
-        int idVino5;
-        int idVino6;
-        };
 infoMesual crearInfoMensual(){
 
     infoMesual e = new infoMesualEstructura;

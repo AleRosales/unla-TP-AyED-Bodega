@@ -7,13 +7,6 @@
 
 using namespace std;
 
-struct ClienteEstructura{
-    int idUsuario;
-    char nombre[30];
-    char direccion[90];
-    int edad;
-};
-
 Cliente crearCiente(){
 
     Cliente e = new ClienteEstructura;

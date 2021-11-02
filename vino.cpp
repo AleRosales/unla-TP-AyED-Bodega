@@ -5,23 +5,10 @@
 
 using namespace std;
 
-
-
-struct VinoEstructura{
-        int idVino;
-        char etiqueta[50];
-        char bodega[50];
-        char segmento_del_vino[50];
-        char varietal[50];
-        int anioCosecha;
-        char terroir[50];
-        };
-
 Vino crearVino(){
     Vino e = new VinoEstructura;
     return e;
 }
-
 
 int getsVino(Vino a){
 return a->idVino;
