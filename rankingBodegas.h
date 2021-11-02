@@ -16,6 +16,11 @@ typedef struct BodegaStruct{
 void lstBodegas(Lista catalogo, Lista info);
 
 Bodega buscarBodega(Lista lista,char nombre[50]);
+
 void agregarBodega(Lista bodega, Vino vino);
+
+
+void mostrarListaBodega(Lista ordenada);
+
 void ordenarListaAuxBodega(Lista lista, Lista ordenada);
 #endif // RANKINGBODEGAS_H_INCLUDED

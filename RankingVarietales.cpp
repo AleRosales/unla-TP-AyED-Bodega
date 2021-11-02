@@ -6,26 +6,28 @@
 #include "cliente.h"
 #include "RankingVarietales.h"
 #include "string.h"
+#include <iomanip>
 
+using namespace std;
 
 void rankingDeVarietales(Lista seleccionados, Lista clientes, Lista vinos){
     Lista rankingRango1 = rankingPorRangoEtario(seleccionados, clientes, vinos, 0, 30);
      Lista ordenada=crearLista();
     ordenarListaAuxVarietales(rankingRango1,ordenada);
-    mostrarRanking(ordenada,0,30);
+    mostrarRanking(ordenada);
     Lista rankingRango2 = rankingPorRangoEtario(seleccionados, clientes, vinos, 30, 50);
     Lista ordenada1=crearLista();
     ordenarListaAuxVarietales(rankingRango2,ordenada1);
-    mostrarRanking(ordenada1,30,50);
+    mostrarRanking(ordenada1);
 
 
     Lista rankingRango3 = rankingPorRangoEtario(seleccionados, clientes, vinos, 50, 1000);
     Lista ordenada2=crearLista();
     ordenarListaAuxVarietales(rankingRango3,ordenada2);
-    mostrarRanking(ordenada2,50,100);
+    mostrarRanking(ordenada2);
 
 }
-
+//rankingPorRangoEtario ?
 Lista rankingPorRangoEtario(Lista seleccionados, Lista clientes,Lista vinos, int valorEtarioInf, int valorEtarioSup) {
     Lista listaResultante = crearLista();
     Nodo nodoActual = seleccionados->inicio;
@@ -109,15 +111,25 @@ Vino traerVino(Lista vinos,int idBuscado){
     return encontrado;
 }
 
-void mostrarRanking(Lista ranking, int valorEtarioInf, int valorEtarioSup){
+//void ordenarRanking(Lista lista){
+//
+//}
+
+void mostrarRanking(Lista ranking){
 
     Nodo nodoActual = ranking->inicio;
-    std::cout<<"\nRanking de varietales entre "<<valorEtarioInf<<" y "<<valorEtarioSup<<":"<<std::endl;
+     cout<<"Ranking de varietales:"<<std::endl;
+     cout << setw( 70 ) << setfill( '-' ) << '\n' << setfill( ' ' );
+    cout << "| "<< left << setw( 14 ) << "Posicion"<< "|" << right << setw( 1) << " Varietal"  << right << setw( 21 )<< "|"<< "Cantidad Selecionado" << " |"<<endl;
+    cout << setw( 70 ) << setfill( '-' ) << '\n' << setfill( ' ' ) << '\n';
     while(nodoActual != NULL){
             RankingVarietales puestoActual = (RankingVarietales) nodoActual->dato;
-            std::cout<<"puesto "<<nodoActual->nro<<" varietal: "<<puestoActual->varietal<<"/t Cant.selecciones: "<<puestoActual->cantidadSelecciones<<std::endl;
+            int resultado=strlen(puestoActual->varietal);
+            cout<<"Nro en lista: "<<nodoActual->nro<<"  varietal: "<<puestoActual->varietal<<right << setw(38-resultado)<<" Cant.selecciones: "<<puestoActual->cantidadSelecciones<<std::endl;
+
             nodoActual = nodoActual->siguiente;
     }
+    cout<<"\n"<<endl;
 
 }
 
@@ -125,22 +137,26 @@ void ordenarListaAuxVarietales(Lista lista, Lista ordenada){
     Nodo actual;
     Nodo siguiente;
     actual=lista->inicio;
+    Nodo aux=actual;
     Nodo auxNodo;
+    int posicion=0;
     int nro;
 
-    while (actual!=NULL ){
-
+    while (actual!=NULL )
+    {
         nro=actual->nro;
         siguiente=actual->siguiente;
         RankingVarietales auxMaximo=(RankingVarietales)actual->dato;
-        while( siguiente !=NULL ){
-
+        while( siguiente !=NULL )
+        {
             RankingVarietales rankig13=(RankingVarietales)siguiente->dato;
-            if(auxMaximo->cantidadSelecciones<rankig13->cantidadSelecciones){
+          if(auxMaximo->cantidadSelecciones<rankig13->cantidadSelecciones)
+            {
             auxMaximo=rankig13;
             nro=siguiente->nro;
             }
             siguiente=siguiente->siguiente;
+
         }
         RankingVarietales nuevo = new RankingVarietalesStruct;
         auxNodo=nodoSeleccionado(lista,nro);
@@ -152,6 +168,7 @@ void ordenarListaAuxVarietales(Lista lista, Lista ordenada){
         eliminarNodo(lista,nro);
 
         actual=lista->inicio;
+
 
     }
 }

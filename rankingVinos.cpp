@@ -4,6 +4,9 @@
 #include "infoMensual.h"
 #include "vino.h"
 #include "RankingVarietales.h"
+#include <iomanip>
+#include <string.h>
+
 
 using namespace std;
 
@@ -90,7 +93,9 @@ void ordenarListaAux(Lista lista, Lista ordenada)
     Nodo actual;
     Nodo siguiente;
     actual=lista->inicio;
+    Nodo aux=actual;
     Nodo auxNodo;
+    Nodo mostrar;
     int nro;
     int i=1;
 
@@ -116,7 +121,6 @@ void ordenarListaAux(Lista lista, Lista ordenada)
         auxNodo=nodoSeleccionado(lista,nro);
         RankingVinos vinoAnt=(RankingVinos)auxNodo->dato;
         nuevo->cantidadSelecciones=vinoAnt->cantidadSelecciones;
-        nuevo->posicion=vinoAnt->posicion;
         nuevo->vino=vinoAnt->vino;
 
         agregarNodo(ordenada,nuevo);
@@ -134,50 +138,21 @@ void ordenarListaAux(Lista lista, Lista ordenada)
 
 void mostrarListaRankigVino(Lista lista){
     int j=1;
+     cout << setw( 80 ) << setfill( '-' ) << '\n' << setfill( ' ' );
+    cout << "| "<< left << setw( 14 ) << "Posicion"<< "|" << right << setw( 1) << " Vino"  << right << setw( 9 )
+    << " | " << "Etiqueta"<<right << setw(7)<< "|" << "Anio"<<right << setw(7) << "|"<< "Cantidad Selecionado" << " |"<<endl;
+    cout << setw( 80 ) << setfill( '-' ) << '\n' << setfill( ' ' ) << '\n';
     while(j<=lista->tamanio){
 
         Nodo nodoRanking=nodoSeleccionado(lista,j);
        RankingVinos rankingDato=(RankingVinos)nodoRanking->dato;
        Vino vino1=rankingDato->vino;
+        int resultado=strlen(getsetiqueta(vino1)); //cuento El tamaño de la cadena para despues poder restar
 
-        cout <<"Nro en lista:"<<nodoRanking->nro<<" -Vino "<<getsVino(vino1)<<":"<<getsetiqueta(vino1)<<" "<<getsAnioCosecha(vino1)<<" -Cant seleccionada: "<<rankingDato->cantidadSelecciones<<endl;
+        cout <<"Nro en lista: "<<nodoRanking->nro<<" -Vino "<<getsVino(vino1)<< " : "<<getsetiqueta(vino1)<<right << setw(16-resultado)<< ""<<getsAnioCosecha(vino1)<<right << setw(7) << ""<<" Cant seleccionada: "<<rankingDato->cantidadSelecciones<<endl;
         j++;
     }
 
-
-
-}
-
-void ordenarLista(Lista lista)
-{
-    Nodo actual;
-    Nodo siguiente;
-    actual=lista->inicio;
-
-    Vino aux;
-    while (actual!=NULL)
-    {
-        siguiente=actual->siguiente;
-        while( siguiente !=NULL)
-        {
-
-            RankingVinos rankig1=(RankingVinos)actual->dato;
-            RankingVinos rankig2=(RankingVinos)siguiente->dato;
-
-            if(rankig1->cantidadSelecciones<rankig2->cantidadSelecciones)
-            {
-                aux=rankig2->vino;
-                rankig2->vino=rankig1->vino;
-                rankig1->vino=aux;
-                int aux =rankig2->cantidadSelecciones;
-                rankig2->cantidadSelecciones=rankig1->cantidadSelecciones;
-                rankig1->cantidadSelecciones=aux;
-
-            }
-            siguiente=siguiente->siguiente;
-
-        }
-        actual=actual->siguiente;
-    }
+      cout<<"\n"<<endl;
 
 }

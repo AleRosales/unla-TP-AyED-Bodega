@@ -10,6 +10,7 @@
 #include "funcionesCargarArchivos.h"
 #include "rankingBodegas.h"
 #include "RankingVarietales.h"
+#include <iomanip>
 using namespace std;
 
 void lstBodegas(Lista vinos, Lista infoSeleccionados)
@@ -39,19 +40,31 @@ void lstBodegas(Lista vinos, Lista infoSeleccionados)
             }
         }
 
-     Lista ordenada=crearLista();
+    Lista ordenada=crearLista();
 
     ordenarListaAuxBodega(lista,ordenada);
 
-    cout <<endl<<"Ranking de bodegas:"<<endl;
+    mostrarListaBodega(ordenada);
+
+}
+
+void mostrarListaBodega(Lista ordenada){
+ cout <<endl<<"Ranking de bodegas:"<<endl;
+  cout << setw( 60 ) << setfill( '-' ) << '\n' << setfill( ' ' );
+    cout << "| "<< left << setw( 14 ) << "Posicion"<< "|" << right << setw( 1) << " Bodega"  << right << setw( 13 )<< "|"<< "Cantidad Selecionado" << " |"<<endl;
+    cout << setw( 60 ) << setfill( '-' ) << '\n' << setfill( ' ' ) << '\n';
     for(int b=1; b< ordenada->tamanio+1 ; b++)
     {
         Nodo nodoRanking=nodoSeleccionado(ordenada,b);
         Bodega bod=(Bodega)nodoRanking->dato;
-        cout <<"Nro en lista:"<<nodoRanking->nro<<" -Bodega "<<bod->nombreBodega<<" -Cant seleccionada: "<<bod->cant<<endl;
-    }
-}
+        bod->nombreBodega;
+        int resultado=strlen(bod->nombreBodega);
 
+        cout <<"Nro en lista:"<<nodoRanking->nro<<"  -Bodega "<<bod->nombreBodega<<right<< setw(33-resultado)<<" -Cant seleccionada: "<<bod->cant<<endl;
+    }
+
+      cout<<"\n"<<endl;
+}
 
 Bodega buscarBodega(Lista lista,char nombre[50])
 {
@@ -101,6 +114,7 @@ void ordenarListaAuxBodega(Lista lista, Lista ordenada){
     Nodo actual;
     Nodo siguiente;
     actual=lista->inicio;
+    Nodo aux=actual;
     Nodo auxNodo;
     int nro;
 
