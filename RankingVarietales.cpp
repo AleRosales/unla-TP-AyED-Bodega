@@ -139,9 +139,7 @@ void ordenarListaAuxVarietales(Lista lista, Lista ordenada){
     Nodo actual;
     Nodo siguiente;
     actual=lista->inicio;
-    Nodo aux=actual;
     Nodo auxNodo;
-    int posicion=0;
     int nro;
 
     while (actual!=NULL )
