@@ -17,7 +17,7 @@ void leerYpasarAusuarios(Lista clien){
     ifstream archivo;
     string texto;
     archivo.open("usuarios_test.txt",ios::in);//abrimos el archivo en modo lectura
-    int contador=0;
+
 
     if(archivo.fail()){
         cout<<"No se pudo abrir el archivo";
@@ -40,7 +40,7 @@ void leerYpasarAseleccion(Lista selec){
      fstream archivo;
      string texto;
     archivo.open("elecion.txt",ios::in);//abrimos el archivo en modo lectura
-    int contador=0;
+
 
     if(archivo.fail()){
         cout<<"No se pudo abrir el archivo";
@@ -62,7 +62,7 @@ void leerYpasaraVinos(Lista vin){
  fstream archivo;
      string texto;
     archivo.open("catalogos.txt",ios::in);//abrimos el archivo en modo lectura
-    int contador=0;
+
 
     if(archivo.fail()){
         cout<<"No se pudo abrir el archivo";

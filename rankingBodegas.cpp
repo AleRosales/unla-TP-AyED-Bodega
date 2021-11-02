@@ -57,7 +57,7 @@ void mostrarListaBodega(Lista ordenada){
     {
         Nodo nodoRanking=nodoSeleccionado(ordenada,b);
         Bodega bod=(Bodega)nodoRanking->dato;
-        bod->nombreBodega;
+
         int resultado=strlen(bod->nombreBodega);
 
         cout <<"Nro en lista:"<<nodoRanking->nro<<"  -Bodega "<<bod->nombreBodega<<right<< setw(33-resultado)<<" -Cant seleccionada: "<<bod->cant<<endl;
@@ -114,7 +114,7 @@ void ordenarListaAuxBodega(Lista lista, Lista ordenada){
     Nodo actual;
     Nodo siguiente;
     actual=lista->inicio;
-    Nodo aux=actual;
+
     Nodo auxNodo;
     int nro;
 
