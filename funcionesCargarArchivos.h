@@ -1,5 +1,6 @@
 #ifndef FUNCIONESCARGARARCHIVOS_H_INCLUDED
 #define FUNCIONESCARGARARCHIVOS_H_INCLUDED
+
 #include "infoMensual.h"
 #include "vino.h"
 #include "cliente.h"
@@ -9,12 +10,12 @@
 
 using namespace std;
 
-void leerYpasarAstructConString(Lista clien);
+void leerYpasarAusuarios(Lista clien);
 void leerYpasarAseleccion(Lista selec);
 void leerYpasaraVinos(Lista vin);
 
 
-Cliente  pasarCharAStructConString(string texto);
+Cliente  pasarCharAStructConStringUsuario(string texto);
 Vino  pasarCharAStructConStringVino(string texto);
 infoMesual  pasarCharAstructSeleccion(string texto);
 

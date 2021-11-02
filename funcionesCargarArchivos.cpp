@@ -10,12 +10,14 @@
 #include "cliente.h"
 #include "lista.h"
 
+
 using namespace std;
 
-void leerYpasarAstructConString(Lista clien){
+void leerYpasarAusuarios(Lista clien){
     ifstream archivo;
     string texto;
     archivo.open("usuarios_test.txt",ios::in);//abrimos el archivo en modo lectura
+    int contador=0;
 
     if(archivo.fail()){
         cout<<"No se pudo abrir el archivo";
@@ -26,19 +28,19 @@ void leerYpasarAstructConString(Lista clien){
 
         getline(archivo,texto);
         Cliente c;
-        c= pasarCharAStructConString(texto);
+        c= pasarCharAStructConStringUsuario(texto);
 
         agregarNodo(clien,c);
     }
-    archivo.close();
-    cout<<"Tamanio clientes:"<<clien->tamanio<<endl;
 
+    archivo.close();
 }
 
 void leerYpasarAseleccion(Lista selec){
      fstream archivo;
      string texto;
     archivo.open("elecion.txt",ios::in);//abrimos el archivo en modo lectura
+    int contador=0;
 
     if(archivo.fail()){
         cout<<"No se pudo abrir el archivo";
@@ -51,14 +53,16 @@ void leerYpasarAseleccion(Lista selec){
        c= pasarCharAstructSeleccion(texto);
        agregarNodo(selec,c);
     }
+
     archivo.close();
-    cout<<"Tamanio seleccion:"<<selec->tamanio<<endl;
+
 }
 
 void leerYpasaraVinos(Lista vin){
  fstream archivo;
      string texto;
     archivo.open("catalogos.txt",ios::in);//abrimos el archivo en modo lectura
+    int contador=0;
 
     if(archivo.fail()){
         cout<<"No se pudo abrir el archivo";
@@ -71,17 +75,16 @@ void leerYpasaraVinos(Lista vin){
         v= pasarCharAStructConStringVino(texto);
         agregarNodo(vin,v);
 
-
     }
+
     archivo.close();
-    cout<<"Tamanio vinos:"<<vin->tamanio<<endl;
 
 }
 
 
 
-Cliente  pasarCharAStructConString(string texto){
-     int pos=-1;
+Cliente  pasarCharAStructConStringUsuario(string texto){
+    int pos=-1;
     int pos2=-1;
     int pos3=-1;
 
