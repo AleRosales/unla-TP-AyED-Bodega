@@ -41,8 +41,6 @@ Lista rankingPorRangoEtario(Lista seleccionados, Lista clientes,Lista vinos, int
 
         if (edadClienteActual > valorEtarioInf && edadClienteActual < valorEtarioSup){
 
-
-
             Vino vino1 = traerVino(vinos, getsVino1(seleccionActual));
             Vino vino2 =traerVino(vinos, getsVino2(seleccionActual));
             Vino vino3 =traerVino(vinos, getsVino3(seleccionActual));
@@ -50,14 +48,12 @@ Lista rankingPorRangoEtario(Lista seleccionados, Lista clientes,Lista vinos, int
             Vino vino5 =traerVino(vinos, getsVino5(seleccionActual));
             Vino vino6 =traerVino(vinos, getsVino6(seleccionActual));
 
-
             agregarVarietal(listaResultante,getsVarietal(vino1));
             agregarVarietal(listaResultante, getsVarietal(vino2));
             agregarVarietal(listaResultante,getsVarietal(vino3));
             agregarVarietal(listaResultante, getsVarietal(vino4));
             agregarVarietal(listaResultante, getsVarietal(vino5));
             agregarVarietal(listaResultante, getsVarietal(vino6));
-
 
         }
         nodoActual = nodoActual->siguiente;
