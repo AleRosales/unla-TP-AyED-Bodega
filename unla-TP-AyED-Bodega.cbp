@@ -47,6 +47,8 @@
 		<Unit filename="infoMensual.h" />
 		<Unit filename="lista.h" />
 		<Unit filename="main.cpp" />
+		<Unit filename="menu.cpp" />
+		<Unit filename="menu.h" />
 		<Unit filename="rankingBodegas.cpp" />
 		<Unit filename="rankingBodegas.h" />
 		<Unit filename="usuarios_test.txt" />
