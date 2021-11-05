@@ -1,0 +1,544 @@
+%PDF-1.3
+3 0 obj
+<</Type /Page
+/Parent 1 0 R
+/Resources 2 0 R
+/Annots []
+/Contents 4 0 R>>
+endobj
+4 0 obj
+<</Length 24931>>
+stream
+q
+1.000 0.000 0.000 -1.000 0.000 841.890 cm
+2 J
+0.57 w
+BT /F1 10.00 Tf ET
+0 G
+0 g
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 28.35 37.02 Tm 0 Tr ( 1  ) Tj  ET Q
+q 0.000 0.627 0.000 rg BT 1 0 0 -1 52.35 37.02 Tm 0 Tr (#ifndef INFOMENSUAL_H_INCLUDED) Tj  ET Q
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 28.35 48.35 Tm 0 Tr ( 2  ) Tj  ET Q
+q 0.000 0.627 0.000 rg BT 1 0 0 -1 52.35 48.35 Tm 0 Tr (#define INFOMENSUAL_H_INCLUDED) Tj  ET Q
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 28.35 59.69 Tm 0 Tr ( 3  ) Tj  ET Q
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 28.35 71.03 Tm 0 Tr ( 4  ) Tj  ET Q
+q 0.596 0.596 0.851 rg BT 1 0 0 -1 52.35 71.03 Tm 0 Tr (/*) Tj  ET Q
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 28.35 82.37 Tm 0 Tr ( 5  ) Tj  ET Q
+q 0.596 0.596 0.851 rg BT 1 0 0 -1 52.35 82.37 Tm 0 Tr (Definicion de tipo de dato InfoMensual para representar los datos de las selecciones) Tj  ET Q
+q 0.596 0.596 0.851 rg BT 1 0 0 -1 28.35 93.71 Tm 0 Tr (de los Clientes) Tj  ET Q
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 28.35 105.05 Tm 0 Tr ( 6  ) Tj  ET Q
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 52.35 105.05 Tm 0 Tr (    ) Tj  ET Q
+q 0.596 0.596 0.851 rg BT 1 0 0 -1 76.35 105.05 Tm 0 Tr (Atributos:) Tj  ET Q
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 28.35 116.39 Tm 0 Tr ( 7  ) Tj  ET Q
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 52.35 116.39 Tm 0 Tr (        ) Tj  ET Q
+q 0.596 0.596 0.851 rg BT 1 0 0 -1 100.35 116.39 Tm 0 Tr (idUsuario) Tj  ET Q
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 28.35 127.72 Tm 0 Tr ( 8  ) Tj  ET Q
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 52.35 127.72 Tm 0 Tr (        ) Tj  ET Q
+q 0.596 0.596 0.851 rg BT 1 0 0 -1 100.35 127.72 Tm 0 Tr (mesSeleccion) Tj  ET Q
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 28.35 139.06 Tm 0 Tr ( 9  ) Tj  ET Q
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 52.35 139.06 Tm 0 Tr (        ) Tj  ET Q
+q 0.596 0.596 0.851 rg BT 1 0 0 -1 100.35 139.06 Tm 0 Tr (anioSeleccion) Tj  ET Q
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 28.35 150.40 Tm 0 Tr (10  ) Tj  ET Q
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 52.35 150.40 Tm 0 Tr (        ) Tj  ET Q
+q 0.596 0.596 0.851 rg BT 1 0 0 -1 100.35 150.40 Tm 0 Tr (idVino1) Tj  ET Q
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 28.35 161.74 Tm 0 Tr (11  ) Tj  ET Q
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 52.35 161.74 Tm 0 Tr (        ) Tj  ET Q
+q 0.596 0.596 0.851 rg BT 1 0 0 -1 100.35 161.74 Tm 0 Tr (idVino2) Tj  ET Q
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 28.35 173.08 Tm 0 Tr (12  ) Tj  ET Q
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 52.35 173.08 Tm 0 Tr (        ) Tj  ET Q
+q 0.596 0.596 0.851 rg BT 1 0 0 -1 100.35 173.08 Tm 0 Tr (idVino3) Tj  ET Q
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 28.35 184.42 Tm 0 Tr (13  ) Tj  ET Q
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 52.35 184.42 Tm 0 Tr (        ) Tj  ET Q
+q 0.596 0.596 0.851 rg BT 1 0 0 -1 100.35 184.42 Tm 0 Tr (idVino4) Tj  ET Q
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 28.35 195.76 Tm 0 Tr (14  ) Tj  ET Q
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 52.35 195.76 Tm 0 Tr (        ) Tj  ET Q
+q 0.596 0.596 0.851 rg BT 1 0 0 -1 100.35 195.76 Tm 0 Tr (idVino5) Tj  ET Q
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 28.35 207.09 Tm 0 Tr (15  ) Tj  ET Q
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 52.35 207.09 Tm 0 Tr (        ) Tj  ET Q
+q 0.596 0.596 0.851 rg BT 1 0 0 -1 100.35 207.09 Tm 0 Tr (idVino6) Tj  ET Q
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 28.35 218.43 Tm 0 Tr (16  ) Tj  ET Q
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 52.35 218.43 Tm 0 Tr (    ) Tj  ET Q
+q 0.596 0.596 0.851 rg BT 1 0 0 -1 76.35 218.43 Tm 0 Tr (Axiomas) Tj  ET Q
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 28.35 229.77 Tm 0 Tr (17  ) Tj  ET Q
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 52.35 229.77 Tm 0 Tr (        ) Tj  ET Q
+q 0.596 0.596 0.851 rg BT 1 0 0 -1 100.35 229.77 Tm 0 Tr (idUsuario: mayor a 0) Tj  ET Q
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 28.35 241.11 Tm 0 Tr (18  ) Tj  ET Q
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 52.35 241.11 Tm 0 Tr (        ) Tj  ET Q
+q 0.596 0.596 0.851 rg BT 1 0 0 -1 100.35 241.11 Tm 0 Tr (mesSeleccion: entre 1 y 12) Tj  ET Q
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 28.35 252.45 Tm 0 Tr (19  ) Tj  ET Q
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 52.35 252.45 Tm 0 Tr (        ) Tj  ET Q
+q 0.596 0.596 0.851 rg BT 1 0 0 -1 100.35 252.45 Tm 0 Tr (anioSeleccion: entre 0 y 2147483647) Tj  ET Q
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 28.35 263.79 Tm 0 Tr (20  ) Tj  ET Q
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 52.35 263.79 Tm 0 Tr (        ) Tj  ET Q
+q 0.596 0.596 0.851 rg BT 1 0 0 -1 100.35 263.79 Tm 0 Tr (idVino1: entre 0 y 2147483647) Tj  ET Q
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 28.35 275.13 Tm 0 Tr (21  ) Tj  ET Q
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 52.35 275.13 Tm 0 Tr (        ) Tj  ET Q
+q 0.596 0.596 0.851 rg BT 1 0 0 -1 100.35 275.13 Tm 0 Tr (idVino2: entre 0 y 2147483647) Tj  ET Q
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 28.35 286.46 Tm 0 Tr (22  ) Tj  ET Q
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 52.35 286.46 Tm 0 Tr (        ) Tj  ET Q
+q 0.596 0.596 0.851 rg BT 1 0 0 -1 100.35 286.46 Tm 0 Tr (idVino3: entre 0 y 2147483647) Tj  ET Q
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 28.35 297.80 Tm 0 Tr (23  ) Tj  ET Q
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 52.35 297.80 Tm 0 Tr (        ) Tj  ET Q
+q 0.596 0.596 0.851 rg BT 1 0 0 -1 100.35 297.80 Tm 0 Tr (idVino4: entre 0 y 2147483647) Tj  ET Q
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 28.35 309.14 Tm 0 Tr (24  ) Tj  ET Q
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 52.35 309.14 Tm 0 Tr (        ) Tj  ET Q
+q 0.596 0.596 0.851 rg BT 1 0 0 -1 100.35 309.14 Tm 0 Tr (idVino5: entre 0 y 2147483647) Tj  ET Q
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 28.35 320.48 Tm 0 Tr (25  ) Tj  ET Q
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 52.35 320.48 Tm 0 Tr (        ) Tj  ET Q
+q 0.596 0.596 0.851 rg BT 1 0 0 -1 100.35 320.48 Tm 0 Tr (idVino6: entre 0 y 2147483647) Tj  ET Q
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 28.35 331.82 Tm 0 Tr (26  ) Tj  ET Q
+q 0.596 0.596 0.851 rg BT 1 0 0 -1 52.35 331.82 Tm 0 Tr (*/) Tj  ET Q
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 28.35 343.16 Tm 0 Tr (27  ) Tj  ET Q
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 28.35 354.50 Tm 0 Tr (28  ) Tj  ET Q
+q 0.596 0.596 0.851 rg BT 1 0 0 -1 52.35 354.50 Tm 0 Tr (/*Tipo de estructura*/) Tj  ET Q
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 28.35 365.83 Tm 0 Tr (29  ) Tj  ET Q
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 28.35 377.17 Tm 0 Tr (30  ) Tj  ET Q
+BT /F2 10.00 Tf ET
+q 0.000 0.000 0.627 rg BT 1 0 0 -1 52.35 377.17 Tm 0 Tr (struct ) Tj  ET Q
+BT /F1 10.00 Tf ET
+1.000 1.000 1.000 rg
+94.35 368.50 120.00 11.34 re f q 0.000 0.000 0.000 rg BT 1 0 0 -1 94.35 377.17 Tm 0 Tr (infoMesualEstructura) Tj  ET Q
+q 1.000 0.000 0.000 rg BT 1 0 0 -1 214.35 377.17 Tm 0 Tr ({) Tj  ET Q
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 28.35 388.51 Tm 0 Tr (31  ) Tj  ET Q
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 52.35 388.51 Tm 0 Tr (        ) Tj  ET Q
+BT /F2 10.00 Tf ET
+q 0.000 0.000 0.627 rg BT 1 0 0 -1 100.35 388.51 Tm 0 Tr (int ) Tj  ET Q
+BT /F1 10.00 Tf ET
+1.000 1.000 1.000 rg
+124.35 379.84 54.00 11.34 re f q 0.000 0.000 0.000 rg BT 1 0 0 -1 124.35 388.51 Tm 0 Tr (idUsuario) Tj  ET Q
+q 1.000 0.000 0.000 rg BT 1 0 0 -1 178.35 388.51 Tm 0 Tr (;) Tj  ET Q
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 28.35 399.85 Tm 0 Tr (32  ) Tj  ET Q
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 52.35 399.85 Tm 0 Tr (        ) Tj  ET Q
+BT /F2 10.00 Tf ET
+q 0.000 0.000 0.627 rg BT 1 0 0 -1 100.35 399.85 Tm 0 Tr (int ) Tj  ET Q
+BT /F1 10.00 Tf ET
+1.000 1.000 1.000 rg
+124.35 391.18 72.00 11.34 re f q 0.000 0.000 0.000 rg BT 1 0 0 -1 124.35 399.85 Tm 0 Tr (mesSeleccion) Tj  ET Q
+q 1.000 0.000 0.000 rg BT 1 0 0 -1 196.35 399.85 Tm 0 Tr (;) Tj  ET Q
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 28.35 411.19 Tm 0 Tr (33  ) Tj  ET Q
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 52.35 411.19 Tm 0 Tr (        ) Tj  ET Q
+BT /F2 10.00 Tf ET
+q 0.000 0.000 0.627 rg BT 1 0 0 -1 100.35 411.19 Tm 0 Tr (int ) Tj  ET Q
+BT /F1 10.00 Tf ET
+1.000 1.000 1.000 rg
+124.35 402.52 78.00 11.34 re f q 0.000 0.000 0.000 rg BT 1 0 0 -1 124.35 411.19 Tm 0 Tr (anioSeleccion) Tj  ET Q
+q 1.000 0.000 0.000 rg BT 1 0 0 -1 202.35 411.19 Tm 0 Tr (;) Tj  ET Q
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 28.35 422.53 Tm 0 Tr (34  ) Tj  ET Q
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 52.35 422.53 Tm 0 Tr (        ) Tj  ET Q
+BT /F2 10.00 Tf ET
+q 0.000 0.000 0.627 rg BT 1 0 0 -1 100.35 422.53 Tm 0 Tr (int ) Tj  ET Q
+BT /F1 10.00 Tf ET
+1.000 1.000 1.000 rg
+124.35 413.86 42.00 11.34 re f q 0.000 0.000 0.000 rg BT 1 0 0 -1 124.35 422.53 Tm 0 Tr (idVino1) Tj  ET Q
+q 1.000 0.000 0.000 rg BT 1 0 0 -1 166.35 422.53 Tm 0 Tr (;) Tj  ET Q
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 28.35 433.87 Tm 0 Tr (35  ) Tj  ET Q
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 52.35 433.87 Tm 0 Tr (        ) Tj  ET Q
+BT /F2 10.00 Tf ET
+q 0.000 0.000 0.627 rg BT 1 0 0 -1 100.35 433.87 Tm 0 Tr (int ) Tj  ET Q
+BT /F1 10.00 Tf ET
+1.000 1.000 1.000 rg
+124.35 425.20 42.00 11.34 re f q 0.000 0.000 0.000 rg BT 1 0 0 -1 124.35 433.87 Tm 0 Tr (idVino2) Tj  ET Q
+q 1.000 0.000 0.000 rg BT 1 0 0 -1 166.35 433.87 Tm 0 Tr (;) Tj  ET Q
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 28.35 445.20 Tm 0 Tr (36  ) Tj  ET Q
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 52.35 445.20 Tm 0 Tr (        ) Tj  ET Q
+BT /F2 10.00 Tf ET
+q 0.000 0.000 0.627 rg BT 1 0 0 -1 100.35 445.20 Tm 0 Tr (int ) Tj  ET Q
+BT /F1 10.00 Tf ET
+1.000 1.000 1.000 rg
+124.35 436.54 42.00 11.34 re f q 0.000 0.000 0.000 rg BT 1 0 0 -1 124.35 445.20 Tm 0 Tr (idVino3) Tj  ET Q
+q 1.000 0.000 0.000 rg BT 1 0 0 -1 166.35 445.20 Tm 0 Tr (;) Tj  ET Q
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 28.35 456.54 Tm 0 Tr (37  ) Tj  ET Q
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 52.35 456.54 Tm 0 Tr (        ) Tj  ET Q
+BT /F2 10.00 Tf ET
+q 0.000 0.000 0.627 rg BT 1 0 0 -1 100.35 456.54 Tm 0 Tr (int ) Tj  ET Q
+BT /F1 10.00 Tf ET
+1.000 1.000 1.000 rg
+124.35 447.87 42.00 11.34 re f q 0.000 0.000 0.000 rg BT 1 0 0 -1 124.35 456.54 Tm 0 Tr (idVino4) Tj  ET Q
+q 1.000 0.000 0.000 rg BT 1 0 0 -1 166.35 456.54 Tm 0 Tr (;) Tj  ET Q
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 28.35 467.88 Tm 0 Tr (38  ) Tj  ET Q
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 52.35 467.88 Tm 0 Tr (        ) Tj  ET Q
+BT /F2 10.00 Tf ET
+q 0.000 0.000 0.627 rg BT 1 0 0 -1 100.35 467.88 Tm 0 Tr (int ) Tj  ET Q
+BT /F1 10.00 Tf ET
+1.000 1.000 1.000 rg
+124.35 459.21 42.00 11.34 re f q 0.000 0.000 0.000 rg BT 1 0 0 -1 124.35 467.88 Tm 0 Tr (idVino5) Tj  ET Q
+q 1.000 0.000 0.000 rg BT 1 0 0 -1 166.35 467.88 Tm 0 Tr (;) Tj  ET Q
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 28.35 479.22 Tm 0 Tr (39  ) Tj  ET Q
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 52.35 479.22 Tm 0 Tr (        ) Tj  ET Q
+BT /F2 10.00 Tf ET
+q 0.000 0.000 0.627 rg BT 1 0 0 -1 100.35 479.22 Tm 0 Tr (int ) Tj  ET Q
+BT /F1 10.00 Tf ET
+1.000 1.000 1.000 rg
+124.35 470.55 42.00 11.34 re f q 0.000 0.000 0.000 rg BT 1 0 0 -1 124.35 479.22 Tm 0 Tr (idVino6) Tj  ET Q
+q 1.000 0.000 0.000 rg BT 1 0 0 -1 166.35 479.22 Tm 0 Tr (;) Tj  ET Q
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 28.35 490.56 Tm 0 Tr (40  ) Tj  ET Q
+q 1.000 0.000 0.000 rg BT 1 0 0 -1 52.35 490.56 Tm 0 Tr (};) Tj  ET Q
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 28.35 501.90 Tm 0 Tr (41  ) Tj  ET Q
+BT /F2 10.00 Tf ET
+q 0.000 0.000 0.627 rg BT 1 0 0 -1 52.35 501.90 Tm 0 Tr (typedef struct ) Tj  ET Q
+BT /F1 10.00 Tf ET
+1.000 1.000 1.000 rg
+142.35 493.23 126.00 11.34 re f q 0.000 0.000 0.000 rg BT 1 0 0 -1 142.35 501.90 Tm 0 Tr (infoMesualEstructura ) Tj  ET Q
+q 1.000 0.000 0.000 rg BT 1 0 0 -1 268.35 501.90 Tm 0 Tr (* ) Tj  ET Q
+1.000 1.000 1.000 rg
+280.35 493.23 60.00 11.34 re f q 0.000 0.000 0.000 rg BT 1 0 0 -1 280.35 501.90 Tm 0 Tr (infoMesual) Tj  ET Q
+q 1.000 0.000 0.000 rg BT 1 0 0 -1 340.35 501.90 Tm 0 Tr (;) Tj  ET Q
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 28.35 513.24 Tm 0 Tr (42  ) Tj  ET Q
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 28.35 524.57 Tm 0 Tr (43  ) Tj  ET Q
+BT /F2 10.00 Tf ET
+q 0.502 0.502 1.000 rg BT 1 0 0 -1 52.35 524.57 Tm 0 Tr (/**********************************/) Tj  ET Q
+BT /F1 10.00 Tf ET
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 28.35 535.91 Tm 0 Tr (44  ) Tj  ET Q
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 28.35 547.25 Tm 0 Tr (45  ) Tj  ET Q
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 28.35 558.59 Tm 0 Tr (46  ) Tj  ET Q
+q 0.596 0.596 0.851 rg BT 1 0 0 -1 52.35 558.59 Tm 0 Tr (/*getters y setters*/) Tj  ET Q
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 28.35 569.93 Tm 0 Tr (47  ) Tj  ET Q
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 28.35 581.27 Tm 0 Tr (48  ) Tj  ET Q
+BT /F2 10.00 Tf ET
+q 0.000 0.000 0.627 rg BT 1 0 0 -1 52.35 581.27 Tm 0 Tr (int ) Tj  ET Q
+BT /F1 10.00 Tf ET
+1.000 1.000 1.000 rg
+76.35 572.60 102.00 11.34 re f q 0.000 0.000 0.000 rg BT 1 0 0 -1 76.35 581.27 Tm 0 Tr (getsIdUsuarioInfo) Tj  ET Q
+q 1.000 0.000 0.000 rg BT 1 0 0 -1 178.35 581.27 Tm 0 Tr (\() Tj  ET Q
+1.000 1.000 1.000 rg
+184.35 572.60 72.00 11.34 re f q 0.000 0.000 0.000 rg BT 1 0 0 -1 184.35 581.27 Tm 0 Tr (infoMesual a) Tj  ET Q
+q 1.000 0.000 0.000 rg BT 1 0 0 -1 256.35 581.27 Tm 0 Tr (\);) Tj  ET Q
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 28.35 592.61 Tm 0 Tr (49  ) Tj  ET Q
+BT /F2 10.00 Tf ET
+q 0.000 0.000 0.627 rg BT 1 0 0 -1 52.35 592.61 Tm 0 Tr (int ) Tj  ET Q
+BT /F1 10.00 Tf ET
+1.000 1.000 1.000 rg
+76.35 583.94 102.00 11.34 re f q 0.000 0.000 0.000 rg BT 1 0 0 -1 76.35 592.61 Tm 0 Tr (getsAnioSeleccion) Tj  ET Q
+q 1.000 0.000 0.000 rg BT 1 0 0 -1 178.35 592.61 Tm 0 Tr (\() Tj  ET Q
+1.000 1.000 1.000 rg
+184.35 583.94 72.00 11.34 re f q 0.000 0.000 0.000 rg BT 1 0 0 -1 184.35 592.61 Tm 0 Tr (infoMesual a) Tj  ET Q
+q 1.000 0.000 0.000 rg BT 1 0 0 -1 256.35 592.61 Tm 0 Tr (\);) Tj  ET Q
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 28.35 603.94 Tm 0 Tr (50  ) Tj  ET Q
+BT /F2 10.00 Tf ET
+q 0.000 0.000 0.627 rg BT 1 0 0 -1 52.35 603.94 Tm 0 Tr (int ) Tj  ET Q
+BT /F1 10.00 Tf ET
+1.000 1.000 1.000 rg
+76.35 595.28 54.00 11.34 re f q 0.000 0.000 0.000 rg BT 1 0 0 -1 76.35 603.94 Tm 0 Tr (getsVino1) Tj  ET Q
+q 1.000 0.000 0.000 rg BT 1 0 0 -1 130.35 603.94 Tm 0 Tr (\() Tj  ET Q
+1.000 1.000 1.000 rg
+136.35 595.28 72.00 11.34 re f q 0.000 0.000 0.000 rg BT 1 0 0 -1 136.35 603.94 Tm 0 Tr (infoMesual a) Tj  ET Q
+q 1.000 0.000 0.000 rg BT 1 0 0 -1 208.35 603.94 Tm 0 Tr (\);) Tj  ET Q
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 28.35 615.28 Tm 0 Tr (51  ) Tj  ET Q
+BT /F2 10.00 Tf ET
+q 0.000 0.000 0.627 rg BT 1 0 0 -1 52.35 615.28 Tm 0 Tr (int ) Tj  ET Q
+BT /F1 10.00 Tf ET
+1.000 1.000 1.000 rg
+76.35 606.61 54.00 11.34 re f q 0.000 0.000 0.000 rg BT 1 0 0 -1 76.35 615.28 Tm 0 Tr (getsVino2) Tj  ET Q
+q 1.000 0.000 0.000 rg BT 1 0 0 -1 130.35 615.28 Tm 0 Tr (\() Tj  ET Q
+1.000 1.000 1.000 rg
+136.35 606.61 72.00 11.34 re f q 0.000 0.000 0.000 rg BT 1 0 0 -1 136.35 615.28 Tm 0 Tr (infoMesual a) Tj  ET Q
+q 1.000 0.000 0.000 rg BT 1 0 0 -1 208.35 615.28 Tm 0 Tr (\);) Tj  ET Q
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 28.35 626.62 Tm 0 Tr (52  ) Tj  ET Q
+BT /F2 10.00 Tf ET
+q 0.000 0.000 0.627 rg BT 1 0 0 -1 52.35 626.62 Tm 0 Tr (int ) Tj  ET Q
+BT /F1 10.00 Tf ET
+1.000 1.000 1.000 rg
+76.35 617.95 54.00 11.34 re f q 0.000 0.000 0.000 rg BT 1 0 0 -1 76.35 626.62 Tm 0 Tr (getsVino3) Tj  ET Q
+q 1.000 0.000 0.000 rg BT 1 0 0 -1 130.35 626.62 Tm 0 Tr (\() Tj  ET Q
+1.000 1.000 1.000 rg
+136.35 617.95 72.00 11.34 re f q 0.000 0.000 0.000 rg BT 1 0 0 -1 136.35 626.62 Tm 0 Tr (infoMesual a) Tj  ET Q
+q 1.000 0.000 0.000 rg BT 1 0 0 -1 208.35 626.62 Tm 0 Tr (\);) Tj  ET Q
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 28.35 637.96 Tm 0 Tr (53  ) Tj  ET Q
+BT /F2 10.00 Tf ET
+q 0.000 0.000 0.627 rg BT 1 0 0 -1 52.35 637.96 Tm 0 Tr (int ) Tj  ET Q
+BT /F1 10.00 Tf ET
+1.000 1.000 1.000 rg
+76.35 629.29 54.00 11.34 re f q 0.000 0.000 0.000 rg BT 1 0 0 -1 76.35 637.96 Tm 0 Tr (getsVino4) Tj  ET Q
+q 1.000 0.000 0.000 rg BT 1 0 0 -1 130.35 637.96 Tm 0 Tr (\() Tj  ET Q
+1.000 1.000 1.000 rg
+136.35 629.29 72.00 11.34 re f q 0.000 0.000 0.000 rg BT 1 0 0 -1 136.35 637.96 Tm 0 Tr (infoMesual a) Tj  ET Q
+q 1.000 0.000 0.000 rg BT 1 0 0 -1 208.35 637.96 Tm 0 Tr (\);) Tj  ET Q
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 28.35 649.30 Tm 0 Tr (54  ) Tj  ET Q
+BT /F2 10.00 Tf ET
+q 0.000 0.000 0.627 rg BT 1 0 0 -1 52.35 649.30 Tm 0 Tr (int ) Tj  ET Q
+BT /F1 10.00 Tf ET
+1.000 1.000 1.000 rg
+76.35 640.63 54.00 11.34 re f q 0.000 0.000 0.000 rg BT 1 0 0 -1 76.35 649.30 Tm 0 Tr (getsVino5) Tj  ET Q
+q 1.000 0.000 0.000 rg BT 1 0 0 -1 130.35 649.30 Tm 0 Tr (\() Tj  ET Q
+1.000 1.000 1.000 rg
+136.35 640.63 72.00 11.34 re f q 0.000 0.000 0.000 rg BT 1 0 0 -1 136.35 649.30 Tm 0 Tr (infoMesual a) Tj  ET Q
+q 1.000 0.000 0.000 rg BT 1 0 0 -1 208.35 649.30 Tm 0 Tr (\);) Tj  ET Q
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 28.35 660.64 Tm 0 Tr (55  ) Tj  ET Q
+BT /F2 10.00 Tf ET
+q 0.000 0.000 0.627 rg BT 1 0 0 -1 52.35 660.64 Tm 0 Tr (int ) Tj  ET Q
+BT /F1 10.00 Tf ET
+1.000 1.000 1.000 rg
+76.35 651.97 54.00 11.34 re f q 0.000 0.000 0.000 rg BT 1 0 0 -1 76.35 660.64 Tm 0 Tr (getsVino6) Tj  ET Q
+q 1.000 0.000 0.000 rg BT 1 0 0 -1 130.35 660.64 Tm 0 Tr (\() Tj  ET Q
+1.000 1.000 1.000 rg
+136.35 651.97 72.00 11.34 re f q 0.000 0.000 0.000 rg BT 1 0 0 -1 136.35 660.64 Tm 0 Tr (infoMesual a) Tj  ET Q
+q 1.000 0.000 0.000 rg BT 1 0 0 -1 208.35 660.64 Tm 0 Tr (\);) Tj  ET Q
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 28.35 671.98 Tm 0 Tr (56  ) Tj  ET Q
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 28.35 683.31 Tm 0 Tr (57  ) Tj  ET Q
+BT /F2 10.00 Tf ET
+q 0.000 0.000 0.627 rg BT 1 0 0 -1 52.35 683.31 Tm 0 Tr (void ) Tj  ET Q
+BT /F1 10.00 Tf ET
+1.000 1.000 1.000 rg
+82.35 674.65 78.00 11.34 re f q 0.000 0.000 0.000 rg BT 1 0 0 -1 82.35 683.31 Tm 0 Tr (setsIdusuario) Tj  ET Q
+q 1.000 0.000 0.000 rg BT 1 0 0 -1 160.35 683.31 Tm 0 Tr (\() Tj  ET Q
+1.000 1.000 1.000 rg
+166.35 674.65 72.00 11.34 re f q 0.000 0.000 0.000 rg BT 1 0 0 -1 166.35 683.31 Tm 0 Tr (infoMesual a) Tj  ET Q
+q 1.000 0.000 0.000 rg BT 1 0 0 -1 238.35 683.31 Tm 0 Tr (, ) Tj  ET Q
+BT /F2 10.00 Tf ET
+q 0.000 0.000 0.627 rg BT 1 0 0 -1 250.35 683.31 Tm 0 Tr (int ) Tj  ET Q
+BT /F1 10.00 Tf ET
+1.000 1.000 1.000 rg
+274.35 674.65 42.00 11.34 re f q 0.000 0.000 0.000 rg BT 1 0 0 -1 274.35 683.31 Tm 0 Tr (nuevoId) Tj  ET Q
+q 1.000 0.000 0.000 rg BT 1 0 0 -1 316.35 683.31 Tm 0 Tr (\);) Tj  ET Q
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 28.35 694.65 Tm 0 Tr (58  ) Tj  ET Q
+BT /F2 10.00 Tf ET
+q 0.000 0.000 0.627 rg BT 1 0 0 -1 52.35 694.65 Tm 0 Tr (void ) Tj  ET Q
+BT /F1 10.00 Tf ET
+1.000 1.000 1.000 rg
+82.35 685.98 96.00 11.34 re f q 0.000 0.000 0.000 rg BT 1 0 0 -1 82.35 694.65 Tm 0 Tr (setsMesSeleccion) Tj  ET Q
+q 1.000 0.000 0.000 rg BT 1 0 0 -1 178.35 694.65 Tm 0 Tr (\() Tj  ET Q
+1.000 1.000 1.000 rg
+184.35 685.98 72.00 11.34 re f q 0.000 0.000 0.000 rg BT 1 0 0 -1 184.35 694.65 Tm 0 Tr (infoMesual a) Tj  ET Q
+q 1.000 0.000 0.000 rg BT 1 0 0 -1 256.35 694.65 Tm 0 Tr (, ) Tj  ET Q
+BT /F2 10.00 Tf ET
+q 0.000 0.000 0.627 rg BT 1 0 0 -1 268.35 694.65 Tm 0 Tr (int ) Tj  ET Q
+BT /F1 10.00 Tf ET
+1.000 1.000 1.000 rg
+292.35 685.98 102.00 11.34 re f q 0.000 0.000 0.000 rg BT 1 0 0 -1 292.35 694.65 Tm 0 Tr (nuevoMesSeleccion) Tj  ET Q
+q 1.000 0.000 0.000 rg BT 1 0 0 -1 394.35 694.65 Tm 0 Tr (\);) Tj  ET Q
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 28.35 705.99 Tm 0 Tr (59  ) Tj  ET Q
+BT /F2 10.00 Tf ET
+q 0.000 0.000 0.627 rg BT 1 0 0 -1 52.35 705.99 Tm 0 Tr (void ) Tj  ET Q
+BT /F1 10.00 Tf ET
+1.000 1.000 1.000 rg
+82.35 697.32 102.00 11.34 re f q 0.000 0.000 0.000 rg BT 1 0 0 -1 82.35 705.99 Tm 0 Tr (setsAnioSeleccion) Tj  ET Q
+q 1.000 0.000 0.000 rg BT 1 0 0 -1 184.35 705.99 Tm 0 Tr (\() Tj  ET Q
+1.000 1.000 1.000 rg
+190.35 697.32 72.00 11.34 re f q 0.000 0.000 0.000 rg BT 1 0 0 -1 190.35 705.99 Tm 0 Tr (infoMesual a) Tj  ET Q
+q 1.000 0.000 0.000 rg BT 1 0 0 -1 262.35 705.99 Tm 0 Tr (, ) Tj  ET Q
+BT /F2 10.00 Tf ET
+q 0.000 0.000 0.627 rg BT 1 0 0 -1 274.35 705.99 Tm 0 Tr (int ) Tj  ET Q
+BT /F1 10.00 Tf ET
+1.000 1.000 1.000 rg
+298.35 697.32 108.00 11.34 re f q 0.000 0.000 0.000 rg BT 1 0 0 -1 298.35 705.99 Tm 0 Tr (nuevoAnioSeleccion) Tj  ET Q
+q 1.000 0.000 0.000 rg BT 1 0 0 -1 406.35 705.99 Tm 0 Tr (\);) Tj  ET Q
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 28.35 717.33 Tm 0 Tr (60  ) Tj  ET Q
+BT /F2 10.00 Tf ET
+q 0.000 0.000 0.627 rg BT 1 0 0 -1 52.35 717.33 Tm 0 Tr (void ) Tj  ET Q
+BT /F1 10.00 Tf ET
+1.000 1.000 1.000 rg
+82.35 708.66 66.00 11.34 re f q 0.000 0.000 0.000 rg BT 1 0 0 -1 82.35 717.33 Tm 0 Tr (setsIdVino1) Tj  ET Q
+q 1.000 0.000 0.000 rg BT 1 0 0 -1 148.35 717.33 Tm 0 Tr (\() Tj  ET Q
+1.000 1.000 1.000 rg
+154.35 708.66 72.00 11.34 re f q 0.000 0.000 0.000 rg BT 1 0 0 -1 154.35 717.33 Tm 0 Tr (infoMesual a) Tj  ET Q
+q 1.000 0.000 0.000 rg BT 1 0 0 -1 226.35 717.33 Tm 0 Tr (, ) Tj  ET Q
+BT /F2 10.00 Tf ET
+q 0.000 0.000 0.627 rg BT 1 0 0 -1 238.35 717.33 Tm 0 Tr (int ) Tj  ET Q
+BT /F1 10.00 Tf ET
+1.000 1.000 1.000 rg
+262.35 708.66 72.00 11.34 re f q 0.000 0.000 0.000 rg BT 1 0 0 -1 262.35 717.33 Tm 0 Tr (nuevoIdVino1) Tj  ET Q
+q 1.000 0.000 0.000 rg BT 1 0 0 -1 334.35 717.33 Tm 0 Tr (\);) Tj  ET Q
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 28.35 728.67 Tm 0 Tr (61  ) Tj  ET Q
+BT /F2 10.00 Tf ET
+q 0.000 0.000 0.627 rg BT 1 0 0 -1 52.35 728.67 Tm 0 Tr (void ) Tj  ET Q
+BT /F1 10.00 Tf ET
+1.000 1.000 1.000 rg
+82.35 720.00 66.00 11.34 re f q 0.000 0.000 0.000 rg BT 1 0 0 -1 82.35 728.67 Tm 0 Tr (setsIdVino2) Tj  ET Q
+q 1.000 0.000 0.000 rg BT 1 0 0 -1 148.35 728.67 Tm 0 Tr (\() Tj  ET Q
+1.000 1.000 1.000 rg
+154.35 720.00 72.00 11.34 re f q 0.000 0.000 0.000 rg BT 1 0 0 -1 154.35 728.67 Tm 0 Tr (infoMesual a) Tj  ET Q
+q 1.000 0.000 0.000 rg BT 1 0 0 -1 226.35 728.67 Tm 0 Tr (, ) Tj  ET Q
+BT /F2 10.00 Tf ET
+q 0.000 0.000 0.627 rg BT 1 0 0 -1 238.35 728.67 Tm 0 Tr (int ) Tj  ET Q
+BT /F1 10.00 Tf ET
+1.000 1.000 1.000 rg
+262.35 720.00 72.00 11.34 re f q 0.000 0.000 0.000 rg BT 1 0 0 -1 262.35 728.67 Tm 0 Tr (nuevoIdVino2) Tj  ET Q
+q 1.000 0.000 0.000 rg BT 1 0 0 -1 334.35 728.67 Tm 0 Tr (\);) Tj  ET Q
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 28.35 740.01 Tm 0 Tr (62  ) Tj  ET Q
+BT /F2 10.00 Tf ET
+q 0.000 0.000 0.627 rg BT 1 0 0 -1 52.35 740.01 Tm 0 Tr (void ) Tj  ET Q
+BT /F1 10.00 Tf ET
+1.000 1.000 1.000 rg
+82.35 731.34 66.00 11.34 re f q 0.000 0.000 0.000 rg BT 1 0 0 -1 82.35 740.01 Tm 0 Tr (setsIdVino3) Tj  ET Q
+q 1.000 0.000 0.000 rg BT 1 0 0 -1 148.35 740.01 Tm 0 Tr (\() Tj  ET Q
+1.000 1.000 1.000 rg
+154.35 731.34 72.00 11.34 re f q 0.000 0.000 0.000 rg BT 1 0 0 -1 154.35 740.01 Tm 0 Tr (infoMesual a) Tj  ET Q
+q 1.000 0.000 0.000 rg BT 1 0 0 -1 226.35 740.01 Tm 0 Tr (, ) Tj  ET Q
+BT /F2 10.00 Tf ET
+q 0.000 0.000 0.627 rg BT 1 0 0 -1 238.35 740.01 Tm 0 Tr (int ) Tj  ET Q
+BT /F1 10.00 Tf ET
+1.000 1.000 1.000 rg
+262.35 731.34 72.00 11.34 re f q 0.000 0.000 0.000 rg BT 1 0 0 -1 262.35 740.01 Tm 0 Tr (nuevoIdVino3) Tj  ET Q
+q 1.000 0.000 0.000 rg BT 1 0 0 -1 334.35 740.01 Tm 0 Tr (\);) Tj  ET Q
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 28.35 751.35 Tm 0 Tr (63  ) Tj  ET Q
+BT /F2 10.00 Tf ET
+q 0.000 0.000 0.627 rg BT 1 0 0 -1 52.35 751.35 Tm 0 Tr (void ) Tj  ET Q
+BT /F1 10.00 Tf ET
+1.000 1.000 1.000 rg
+82.35 742.68 66.00 11.34 re f q 0.000 0.000 0.000 rg BT 1 0 0 -1 82.35 751.35 Tm 0 Tr (setsIdVino4) Tj  ET Q
+q 1.000 0.000 0.000 rg BT 1 0 0 -1 148.35 751.35 Tm 0 Tr (\() Tj  ET Q
+1.000 1.000 1.000 rg
+154.35 742.68 72.00 11.34 re f q 0.000 0.000 0.000 rg BT 1 0 0 -1 154.35 751.35 Tm 0 Tr (infoMesual a) Tj  ET Q
+q 1.000 0.000 0.000 rg BT 1 0 0 -1 226.35 751.35 Tm 0 Tr (, ) Tj  ET Q
+BT /F2 10.00 Tf ET
+q 0.000 0.000 0.627 rg BT 1 0 0 -1 238.35 751.35 Tm 0 Tr (int ) Tj  ET Q
+BT /F1 10.00 Tf ET
+1.000 1.000 1.000 rg
+262.35 742.68 72.00 11.34 re f q 0.000 0.000 0.000 rg BT 1 0 0 -1 262.35 751.35 Tm 0 Tr (nuevoIdVino4) Tj  ET Q
+q 1.000 0.000 0.000 rg BT 1 0 0 -1 334.35 751.35 Tm 0 Tr (\);) Tj  ET Q
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 28.35 762.69 Tm 0 Tr (64  ) Tj  ET Q
+BT /F2 10.00 Tf ET
+q 0.000 0.000 0.627 rg BT 1 0 0 -1 52.35 762.69 Tm 0 Tr (void ) Tj  ET Q
+BT /F1 10.00 Tf ET
+1.000 1.000 1.000 rg
+82.35 754.02 66.00 11.34 re f q 0.000 0.000 0.000 rg BT 1 0 0 -1 82.35 762.69 Tm 0 Tr (setsIdVino5) Tj  ET Q
+q 1.000 0.000 0.000 rg BT 1 0 0 -1 148.35 762.69 Tm 0 Tr (\() Tj  ET Q
+1.000 1.000 1.000 rg
+154.35 754.02 72.00 11.34 re f q 0.000 0.000 0.000 rg BT 1 0 0 -1 154.35 762.69 Tm 0 Tr (infoMesual a) Tj  ET Q
+q 1.000 0.000 0.000 rg BT 1 0 0 -1 226.35 762.69 Tm 0 Tr (, ) Tj  ET Q
+BT /F2 10.00 Tf ET
+q 0.000 0.000 0.627 rg BT 1 0 0 -1 238.35 762.69 Tm 0 Tr (int ) Tj  ET Q
+BT /F1 10.00 Tf ET
+1.000 1.000 1.000 rg
+262.35 754.02 72.00 11.34 re f q 0.000 0.000 0.000 rg BT 1 0 0 -1 262.35 762.69 Tm 0 Tr (nuevoIdVino5) Tj  ET Q
+q 1.000 0.000 0.000 rg BT 1 0 0 -1 334.35 762.69 Tm 0 Tr (\);) Tj  ET Q
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 28.35 774.02 Tm 0 Tr (65  ) Tj  ET Q
+BT /F2 10.00 Tf ET
+q 0.000 0.000 0.627 rg BT 1 0 0 -1 52.35 774.02 Tm 0 Tr (void ) Tj  ET Q
+BT /F1 10.00 Tf ET
+1.000 1.000 1.000 rg
+82.35 765.35 66.00 11.34 re f q 0.000 0.000 0.000 rg BT 1 0 0 -1 82.35 774.02 Tm 0 Tr (setsIdVino6) Tj  ET Q
+q 1.000 0.000 0.000 rg BT 1 0 0 -1 148.35 774.02 Tm 0 Tr (\() Tj  ET Q
+1.000 1.000 1.000 rg
+154.35 765.35 72.00 11.34 re f q 0.000 0.000 0.000 rg BT 1 0 0 -1 154.35 774.02 Tm 0 Tr (infoMesual a) Tj  ET Q
+q 1.000 0.000 0.000 rg BT 1 0 0 -1 226.35 774.02 Tm 0 Tr (, ) Tj  ET Q
+BT /F2 10.00 Tf ET
+q 0.000 0.000 0.627 rg BT 1 0 0 -1 238.35 774.02 Tm 0 Tr (int ) Tj  ET Q
+BT /F1 10.00 Tf ET
+1.000 1.000 1.000 rg
+262.35 765.35 72.00 11.34 re f q 0.000 0.000 0.000 rg BT 1 0 0 -1 262.35 774.02 Tm 0 Tr (nuevoIdVino6) Tj  ET Q
+q 1.000 0.000 0.000 rg BT 1 0 0 -1 334.35 774.02 Tm 0 Tr (\);) Tj  ET Q
+Q
+
+endstream
+endobj
+5 0 obj
+<</Type /Page
+/Parent 1 0 R
+/Resources 2 0 R
+/Annots []
+/Contents 6 0 R>>
+endobj
+6 0 obj
+<</Length 1887>>
+stream
+q
+1.000 0.000 0.000 -1.000 0.000 841.890 cm
+2 J
+0.57 w
+BT /F1 10.00 Tf ET
+0 G
+1.000 1.000 1.000 rg
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 28.35 37.02 Tm 0 Tr (66  ) Tj  ET Q
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 28.35 48.35 Tm 0 Tr (67  ) Tj  ET Q
+BT /F2 10.00 Tf ET
+q 0.502 0.502 1.000 rg BT 1 0 0 -1 52.35 48.35 Tm 0 Tr (/**********************************/) Tj  ET Q
+BT /F1 10.00 Tf ET
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 28.35 59.69 Tm 0 Tr (68  ) Tj  ET Q
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 28.35 71.03 Tm 0 Tr (69  ) Tj  ET Q
+q 0.596 0.596 0.851 rg BT 1 0 0 -1 52.35 71.03 Tm 0 Tr (/*) Tj  ET Q
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 28.35 82.37 Tm 0 Tr (70  ) Tj  ET Q
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 52.35 82.37 Tm 0 Tr (    ) Tj  ET Q
+q 0.596 0.596 0.851 rg BT 1 0 0 -1 76.35 82.37 Tm 0 Tr (precondicion: ninguna) Tj  ET Q
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 28.35 93.71 Tm 0 Tr (71  ) Tj  ET Q
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 52.35 93.71 Tm 0 Tr (    ) Tj  ET Q
+q 0.596 0.596 0.851 rg BT 1 0 0 -1 76.35 93.71 Tm 0 Tr (postcondicion: crea la InfoMensual) Tj  ET Q
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 28.35 105.05 Tm 0 Tr (72  ) Tj  ET Q
+q 0.596 0.596 0.851 rg BT 1 0 0 -1 52.35 105.05 Tm 0 Tr (*/) Tj  ET Q
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 28.35 116.39 Tm 0 Tr (73  ) Tj  ET Q
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 28.35 127.72 Tm 0 Tr (74  ) Tj  ET Q
+1.000 1.000 1.000 rg
+52.35 119.06 162.00 11.34 re f q 0.000 0.000 0.000 rg BT 1 0 0 -1 52.35 127.72 Tm 0 Tr (infoMesual crearInfoMensual) Tj  ET Q
+q 1.000 0.000 0.000 rg BT 1 0 0 -1 214.35 127.72 Tm 0 Tr (\(\);) Tj  ET Q
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 28.35 139.06 Tm 0 Tr (75  ) Tj  ET Q
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 28.35 150.40 Tm 0 Tr (76  ) Tj  ET Q
+q 0.000 0.627 0.000 rg BT 1 0 0 -1 52.35 150.40 Tm 0 Tr (#endif ) Tj  ET Q
+q 0.596 0.596 0.851 rg BT 1 0 0 -1 94.35 150.40 Tm 0 Tr (// INFOMENSUAL_H_INCLUDED) Tj  ET Q
+Q
+
+endstream
+endobj
+1 0 obj
+<</Type /Pages
+/Kids [3 0 R 5 0 R ]
+/Count 2
+/MediaBox [0 0 595.276 841.890]
+>>
+endobj
+7 0 obj
+<</Type /Font
+/BaseFont /Courier-Bold
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+>>
+endobj
+8 0 obj
+<</Type /Font
+/BaseFont /Courier
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+>>
+endobj
+2 0 obj
+<<
+/ProcSet [/PDF /Text /ImageB /ImageC /ImageI]
+/Font <<
+/F2 7 0 R
+/F1 8 0 R
+>>
+/XObject <<
+>>
+>>
+endobj
+9 0 obj
+<<
+/Names []
+>>
+endobj
+10 0 obj
+<<
+/Producer (þÿ w x P d f D o c u m e n t   0 . 9 . 8)
+/CreationDate (D:20211105134828)
+>>
+endobj
+11 0 obj
+<<
+/Type /Catalog
+/Pages 1 0 R
+/OpenAction [3 0 R /FitH null]
+/PageLayout /OneColumn
+>>
+endobj
+xref
+0 12
+0000000000 65535 f 
+0000027106 00000 n 
+0000027394 00000 n 
+0000000009 00000 n 
+0000000098 00000 n 
+0000025080 00000 n 
+0000025169 00000 n 
+0000027201 00000 n 
+0000027300 00000 n 
+0000027508 00000 n 
+0000027539 00000 n 
+0000027647 00000 n 
+trailer
+<<
+/Size 12
+/Root 11 0 R
+/Info 10 0 R
+>>
+startxref
+27751
+%%EOF
