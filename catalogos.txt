@@ -1,14 +1,14 @@
-12583-Jorge Rubio-Jorge Rubio-medio-Malbec-2016-Valle del Sud Atuel 
-58654-Dv Catena-Dv Catena-medio-Cabernet sauvignon-2019-Mendoza 
-43412-Rutini-Rutini Wines-alto-Malbec-2018-Valle de Uco
-53450-Fond de Cave-Trapiche-alto-Cabernet sauvignon-2020-Valle de Uco;
-45345-Dv Catena-Dv Catena-alto-Malbec-2018-MEndoza ;
-35672-Reserva-Luigi Bosca-medio-Cabernet sauvignon-2015-Valle del Sud Atue ;
-62534-Gran Reserva-Luigi Bosca-alto-Syra-2021-Valle del Sud Atue ;
-15645-Dv Catena-Dv Catena-alto-Malbec-2018-Mendoza ;
-23467-Fond de Cave-Trapiche-alto-Syra-2021-Valle de Uco ;
-97453-Rutini-Rutini Wines-alto-Malbec-2020-Valle de Uco ;
-74457-Reserva-Luigi Bosca-medio-Cabernet sauvignon-2019-Valle del Sud Atuel ;
-74563-De Sangre-Luigi Bosca-alto-Syra-2019-Valle del Sud Atue ;
-45646-Rutini-Rutini Wines-alto-Malbec Roble-2018-Valle de Uco ;
-81633-Gran Reserva-Luigi Bosca-alto-Syra-2021-Valle del Sud Atue ;
+12583   -   Jorge Rubio     -   Jorge Rubio     -   medio   -   Malbec              -   2016    -   Valle del Sud Atuel ;
+58654   -   Dv Catena       -   Dv Catena       -   medio   -   Cabernet sauvignon  -   2019    -   Mendoza ;
+43412   -   Rutini          -   Rutini Wines    -   alto    -   Malbec              -   2018    -   Valle de Uco  ;
+53450   -   Fond de Cave    -   Trapiche        -   alto    -   Cabernet sauvignon  -   2020    -   Valle de Uco  ;
+45345   -   Dv Catena       -   Dv Catena       -   alto    -   Malbec              -   2018    -   MEndoza ;
+35672   -   Reserva         -   Luigi Bosca     -   medio   -   Cabernet sauvignon  -   2015    -   Valle del Sud Atue ;
+62534   -   Gran Reserva    -   Luigi Bosca     -   alto    -   Syra                -   2021    -   Valle del Sud Atue ;
+15645   -   Dv Catena       -   Dv Catena       -   alto    -   Malbec              -   2018    -   Mendoza ;
+23467   -   Fond de Cave    -   Trapiche        -   alto    -   Syra                -   2021    -   Valle de Uco ;
+97453   -   Rutini          -   Rutini Wines    -   alto    -   Malbec              -   2020    -   Valle de Uco ;
+74457   -   Reserva         -   Luigi Bosca     -   medio   -   Cabernet sauvignon  -   2019    -   Valle del Sud Atuel ;
+74563   -   De Sangre       -   Luigi Bosca     -   alto    -   Syra                -   2019    -   Valle del Sud Atue ;
+45646   -   Rutini          -   Rutini Wines    -   alto    -   Malbec Roble        -   2018    -   Valle de Uco ;
+81633   -   Gran Reserva    -   Luigi Bosca     -   alto    -   Syra                -   2021    -   Valle del Sud Atue ;
